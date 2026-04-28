@@ -1,0 +1,525 @@
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Bazzcards" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+        - img "Bazzcards" [ref=e5]
+      - button "Open menu" [active] [ref=e6] [cursor=pointer]
+  - generic [ref=e492]:
+    - link "Pricing" [ref=e493] [cursor=pointer]:
+      - /url: "#"
+    - link "NFC Cards" [ref=e494] [cursor=pointer]:
+      - /url: "#"
+    - link "Customers" [ref=e495] [cursor=pointer]:
+      - /url: "#"
+    - link "Resources" [ref=e496] [cursor=pointer]:
+      - /url: "#"
+    - generic [ref=e498]:
+      - link "Sign In" [ref=e499] [cursor=pointer]:
+        - /url: https://app.bazzcards.com/
+      - link "Get Started" [ref=e500] [cursor=pointer]:
+        - /url: "#"
+  - generic [ref=e13]:
+    - generic [ref=e14]: Trusted by 10,000+ professionals
+    - heading "The Smarter Way To Capture Leads" [level=1] [ref=e16]:
+      - text: The Smarter Way
+      - text: To Capture Leads
+    - paragraph [ref=e17]: Stand out and be remembered with smart digital business cards that capture leads automatically and make follow-ups effortless.
+    - generic [ref=e18]:
+      - link "View pricing →" [ref=e19] [cursor=pointer]:
+        - /url: "#"
+      - link "🪪 Shop NFC cards" [ref=e20] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e22]:
+      - strong [ref=e23]: Trusted by 10,000+
+      - text: businesses worldwide
+  - generic [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]: How it works
+      - heading "How Bazzcards works" [level=2] [ref=e28]
+      - paragraph [ref=e29]: Create a digital business card, share it anywhere, and automatically capture leads – in four simple steps.
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - generic [ref=e33]: "1"
+          - heading "Create your digital business card (and your team’s)" [level=3] [ref=e34]
+          - paragraph [ref=e35]: Set up a profile for yourself or your team in minutes. Add contact details once and keep everything up to date without reprinting cards.
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e39]: AC
+            - generic [ref=e40]: Alex Chen
+            - generic [ref=e41]: Founder & CEO · Acme Corp
+          - generic [ref=e42]:
+            - generic [ref=e43]: 📞 +1 555 000 1234
+            - generic [ref=e44]: ✉️ alex@acmecorp.com
+            - generic [ref=e45]: 💼 linkedin.com/in/alexchen
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]: "2"
+          - heading "Build a profile that helps people take the next step" [level=3] [ref=e49]
+          - paragraph [ref=e50]: Include contact information, links, calendars, case studies, social media, and more on one branded page. Make it easy for people to act immediately after meeting you.
+        - generic [ref=e53]:
+          - generic [ref=e54]: 📅 Book a meeting
+          - generic [ref=e55]: 📄 Download case study
+          - generic [ref=e56]: 🎥 Watch demo
+          - generic [ref=e57]: 📊 View portfolio
+          - generic [ref=e58]: 🐦 Follow on Twitter
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - generic [ref=e61]: "3"
+          - heading "Share anywhere, instantly" [level=3] [ref=e62]
+          - paragraph [ref=e63]: Share in person or online using NFC cards, Apple or Google Wallet, QR codes, or links. Every introduction works the same way, no matter where it happens.
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]: 📡
+            - generic [ref=e68]:
+              - generic [ref=e69]: NFC Card
+              - generic [ref=e70]: Tap to share instantly
+          - generic [ref=e71]:
+            - generic [ref=e72]: 🍎
+            - generic [ref=e73]:
+              - generic [ref=e74]: Apple Wallet
+              - generic [ref=e75]: Always in your pocket
+          - generic [ref=e76]:
+            - generic [ref=e77]: 📱
+            - generic [ref=e78]:
+              - generic [ref=e79]: QR Code
+              - generic [ref=e80]: Scan & connect
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]: "4"
+          - heading "Capture leads, follow up and close deals" [level=3] [ref=e84]
+          - paragraph [ref=e85]: When someone views your card, they can save your details and share theirs with one tap. You see who engaged and follow up with context – no missed leads.
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]: SJ
+            - generic [ref=e90]:
+              - generic [ref=e91]: Sarah Johnson
+              - generic [ref=e92]: Saved your card · 2m ago
+            - generic [ref=e93]: New
+          - generic [ref=e94]:
+            - generic [ref=e95]: MR
+            - generic [ref=e96]:
+              - generic [ref=e97]: Mike Rivera
+              - generic [ref=e98]: Viewed card · 1h ago
+          - generic [ref=e99]:
+            - generic [ref=e100]: EP
+            - generic [ref=e101]:
+              - generic [ref=e102]: Emma Parker
+              - generic [ref=e103]: Saved your card · 3h ago
+  - generic [ref=e105]:
+    - generic [ref=e106]:
+      - heading "Built for individuals and growing teams" [level=2] [ref=e107]:
+        - text: Built for individuals and
+        - text: growing teams
+      - paragraph [ref=e108]: Start on your own or roll out to your entire team — up and running in minutes.
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e111]: 👤
+        - generic [ref=e112]: Personal
+        - paragraph [ref=e113]: Create a digital card that gets saved, shared, and followed up. Perfect for consultants, founders, and anyone who relies on networking.
+        - link "Get started →" [ref=e114] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e115]:
+        - generic [ref=e116]: 👥
+        - generic [ref=e117]: Teams
+        - paragraph [ref=e118]: Give every employee a consistent digital business card. Track engagement, capture leads, and manage users from one place.
+        - link "See pricing →" [ref=e119] [cursor=pointer]:
+          - /url: "#"
+  - generic [ref=e120]:
+    - generic [ref=e121]:
+      - heading "Join 10,000+ professionals" [level=2] [ref=e122]
+      - paragraph [ref=e123]: Real profiles used by individuals and teams across different industries.
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - generic [ref=e127]: ★★★★★
+          - paragraph [ref=e128]: Best business card I've ever had. The tap-and-share experience is seamless and people always remember it.
+          - generic [ref=e129]:
+            - generic [ref=e130]: MC
+            - generic [ref=e131]:
+              - generic [ref=e132]: Mark Contorno
+              - generic [ref=e133]: Distributor for Flux Encoders
+        - generic [ref=e134]:
+          - generic [ref=e135]: ★★★★★
+          - paragraph [ref=e136]: I have had tremendous success meeting people and exchanging info. The key to success is making it frictionless — and this does exactly that. I've implemented it across 3 of my businesses.
+          - generic [ref=e137]:
+            - generic [ref=e138]: JS
+            - generic [ref=e139]:
+              - generic [ref=e140]: Jason Sloan
+              - generic [ref=e141]: Commercial Risk Advisor at Your Policy
+        - generic [ref=e142]:
+          - generic [ref=e143]: ★★★★★
+          - paragraph [ref=e144]: The design is beautiful and fantastic to use. Clients always comment on how professional it looks compared to a paper card.
+          - generic [ref=e145]:
+            - generic [ref=e146]: RO
+            - generic [ref=e147]:
+              - generic [ref=e148]: Ronald Osborne
+              - generic [ref=e149]: Founder at Ronald Osborne Coaching
+        - generic [ref=e150]:
+          - generic [ref=e151]: ★★★★★
+          - paragraph [ref=e152]: This platform has made it incredibly easy for clients to learn about my work and connect with me in a streamlined, professional way.
+          - generic [ref=e153]:
+            - generic [ref=e154]: KK
+            - generic [ref=e155]:
+              - generic [ref=e156]: Kristin "Kay" Kraggerud
+              - generic [ref=e157]: Advanced Clinical EFT Practitioner
+        - generic [ref=e158]:
+          - generic [ref=e159]: ★★★★★
+          - paragraph [ref=e160]: Rolled this out flawlessly across the whole company. Team adoption was instant and the results have been outstanding.
+          - generic [ref=e161]:
+            - generic [ref=e162]: AI
+            - generic [ref=e163]:
+              - generic [ref=e164]: Andrew D Ive
+              - generic [ref=e165]: Founder / Managing General Partner at Big Idea Ventures
+        - generic [ref=e166]:
+          - generic [ref=e167]: ★★★★★
+          - paragraph [ref=e168]: Really efficient with the ability to exchange contact info. I simply walk clients through scanning my QR code after meeting — couldn't be easier.
+          - generic [ref=e169]:
+            - generic [ref=e170]: JP
+            - generic [ref=e171]:
+              - generic [ref=e172]: Jig Pandya
+              - generic [ref=e173]: Chief Strategy Officer at Apsilon Hotels
+        - generic [ref=e174]:
+          - generic [ref=e175]: ★★★★★
+          - paragraph [ref=e176]: Fantastic tool for sharing business information. Super easy to get started and the interface is incredibly user-friendly.
+          - generic [ref=e177]:
+            - generic [ref=e178]: AA
+            - generic [ref=e179]:
+              - generic [ref=e180]: Amir ADJADJ
+              - generic [ref=e181]: 10+ years in AI, automation & digital growth
+        - generic [ref=e182]:
+          - generic [ref=e183]: ★★★★★
+          - paragraph [ref=e184]: Best business card I've ever had. The tap-and-share experience is seamless and people always remember it.
+          - generic [ref=e185]:
+            - generic [ref=e186]: MC
+            - generic [ref=e187]:
+              - generic [ref=e188]: Mark Contorno
+              - generic [ref=e189]: Distributor for Flux Encoders
+        - generic [ref=e190]:
+          - generic [ref=e191]: ★★★★★
+          - paragraph [ref=e192]: I have had tremendous success meeting people and exchanging info. The key to success is making it frictionless — and this does exactly that. I've implemented it across 3 of my businesses.
+          - generic [ref=e193]:
+            - generic [ref=e194]: JS
+            - generic [ref=e195]:
+              - generic [ref=e196]: Jason Sloan
+              - generic [ref=e197]: Commercial Risk Advisor at Your Policy
+        - generic [ref=e198]:
+          - generic [ref=e199]: ★★★★★
+          - paragraph [ref=e200]: The design is beautiful and fantastic to use. Clients always comment on how professional it looks compared to a paper card.
+          - generic [ref=e201]:
+            - generic [ref=e202]: RO
+            - generic [ref=e203]:
+              - generic [ref=e204]: Ronald Osborne
+              - generic [ref=e205]: Founder at Ronald Osborne Coaching
+        - generic [ref=e206]:
+          - generic [ref=e207]: ★★★★★
+          - paragraph [ref=e208]: This platform has made it incredibly easy for clients to learn about my work and connect with me in a streamlined, professional way.
+          - generic [ref=e209]:
+            - generic [ref=e210]: KK
+            - generic [ref=e211]:
+              - generic [ref=e212]: Kristin "Kay" Kraggerud
+              - generic [ref=e213]: Advanced Clinical EFT Practitioner
+        - generic [ref=e214]:
+          - generic [ref=e215]: ★★★★★
+          - paragraph [ref=e216]: Rolled this out flawlessly across the whole company. Team adoption was instant and the results have been outstanding.
+          - generic [ref=e217]:
+            - generic [ref=e218]: AI
+            - generic [ref=e219]:
+              - generic [ref=e220]: Andrew D Ive
+              - generic [ref=e221]: Founder / Managing General Partner at Big Idea Ventures
+        - generic [ref=e222]:
+          - generic [ref=e223]: ★★★★★
+          - paragraph [ref=e224]: Really efficient with the ability to exchange contact info. I simply walk clients through scanning my QR code after meeting — couldn't be easier.
+          - generic [ref=e225]:
+            - generic [ref=e226]: JP
+            - generic [ref=e227]:
+              - generic [ref=e228]: Jig Pandya
+              - generic [ref=e229]: Chief Strategy Officer at Apsilon Hotels
+      - generic [ref=e230]:
+        - generic [ref=e231]:
+          - generic [ref=e232]: ★★★★★
+          - paragraph [ref=e233]: Easy to setup and showcases a lot of information. Our sales team loves it — way better than handing out paper cards that get lost.
+          - generic [ref=e234]:
+            - generic [ref=e235]: EA
+            - generic [ref=e236]:
+              - generic [ref=e237]: Erik Allen
+              - generic [ref=e238]: Founder of LastCARD
+        - generic [ref=e239]:
+          - generic [ref=e240]: ★★★★★
+          - paragraph [ref=e241]: A game-changer for internal networking and a must-have when meeting new clients and partners. We're excited to expand usage across the whole organisation.
+          - generic [ref=e242]:
+            - generic [ref=e243]: DL
+            - generic [ref=e244]:
+              - generic [ref=e245]: David Lawrence
+              - generic [ref=e246]: Director of Innovation at Deloitte
+        - generic [ref=e247]:
+          - generic [ref=e248]: ★★★★★
+          - paragraph [ref=e249]: Fantastic, instructive, and quick! The tap-and-connect feature is great, and the dashboard makes tracking conference connections effortless for CRM updates.
+          - generic [ref=e250]:
+            - generic [ref=e251]: TW
+            - generic [ref=e252]:
+              - generic [ref=e253]: Tom Walker
+              - generic [ref=e254]: Head of Sales, TechVentures
+        - generic [ref=e255]:
+          - generic [ref=e256]: ★★★★★
+          - paragraph [ref=e257]: From day one, the team has been open, transparent and keen to guide us down the right path. It feels more like a collaboration than a vendor relationship.
+          - generic [ref=e258]:
+            - generic [ref=e259]: LP
+            - generic [ref=e260]:
+              - generic [ref=e261]: Laura Peterson
+              - generic [ref=e262]: CEO at GrowthPath Agency
+        - generic [ref=e263]:
+          - generic [ref=e264]: ★★★★★
+          - paragraph [ref=e265]: Incredibly intuitive and professional. Our entire team was onboarded in less than a day and the analytics dashboard is excellent.
+          - generic [ref=e266]:
+            - generic [ref=e267]: NR
+            - generic [ref=e268]:
+              - generic [ref=e269]: Nina Roberts
+              - generic [ref=e270]: VP of Marketing, Scale & Co
+        - generic [ref=e271]:
+          - generic [ref=e272]: ★★★★★
+          - paragraph [ref=e273]: Easy to setup and showcases a lot of information. Our sales team loves it — way better than handing out paper cards that get lost.
+          - generic [ref=e274]:
+            - generic [ref=e275]: EA
+            - generic [ref=e276]:
+              - generic [ref=e277]: Erik Allen
+              - generic [ref=e278]: Founder of LastCARD
+        - generic [ref=e279]:
+          - generic [ref=e280]: ★★★★★
+          - paragraph [ref=e281]: A game-changer for internal networking and a must-have when meeting new clients and partners. We're excited to expand usage across the whole organisation.
+          - generic [ref=e282]:
+            - generic [ref=e283]: DL
+            - generic [ref=e284]:
+              - generic [ref=e285]: David Lawrence
+              - generic [ref=e286]: Director of Innovation at Deloitte
+        - generic [ref=e287]:
+          - generic [ref=e288]: ★★★★★
+          - paragraph [ref=e289]: Fantastic, instructive, and quick! The tap-and-connect feature is great, and the dashboard makes tracking conference connections effortless for CRM updates.
+          - generic [ref=e290]:
+            - generic [ref=e291]: TW
+            - generic [ref=e292]:
+              - generic [ref=e293]: Tom Walker
+              - generic [ref=e294]: Head of Sales, TechVentures
+        - generic [ref=e295]:
+          - generic [ref=e296]: ★★★★★
+          - paragraph [ref=e297]: From day one, the team has been open, transparent and keen to guide us down the right path. It feels more like a collaboration than a vendor relationship.
+          - generic [ref=e298]:
+            - generic [ref=e299]: LP
+            - generic [ref=e300]:
+              - generic [ref=e301]: Laura Peterson
+              - generic [ref=e302]: CEO at GrowthPath Agency
+        - generic [ref=e303]:
+          - generic [ref=e304]: ★★★★★
+          - paragraph [ref=e305]: Incredibly intuitive and professional. Our entire team was onboarded in less than a day and the analytics dashboard is excellent.
+          - generic [ref=e306]:
+            - generic [ref=e307]: NR
+            - generic [ref=e308]:
+              - generic [ref=e309]: Nina Roberts
+              - generic [ref=e310]: VP of Marketing, Scale & Co
+  - generic [ref=e312]:
+    - generic [ref=e313]:
+      - heading "Share across every channel" [level=2] [ref=e314]
+      - paragraph [ref=e315]: Share your profile through email, social bios, digital wallets, or smart NFC cards – no apps, no friction. Just one digital card that works everywhere.
+    - generic [ref=e317]:
+      - generic [ref=e318] [cursor=pointer]:
+        - generic [ref=e319]: 📡
+        - generic [ref=e320]:
+          - generic [ref=e321]: Smart NFC Business Cards
+          - paragraph [ref=e322]: One card = unlimited sharing. Simply tap your card to any smartphone and your profile opens instantly.
+      - generic [ref=e323] [cursor=pointer]:
+        - generic [ref=e324]: 🍎
+        - generic [ref=e325]:
+          - generic [ref=e326]: Apple Wallet
+          - paragraph [ref=e327]: Instant access on Apple devices – no physical card or app needed.
+      - generic [ref=e328] [cursor=pointer]:
+        - generic [ref=e329]: 🤖
+        - generic [ref=e330]:
+          - generic [ref=e331]: Google Wallet
+          - paragraph [ref=e332]: Share from your Android phone – no physical card or app needed.
+      - generic [ref=e333] [cursor=pointer]:
+        - generic [ref=e334]: ✉️
+        - generic [ref=e335]:
+          - generic [ref=e336]: Email Signatures
+          - paragraph [ref=e337]: Turn every email into a lead with your profile attached.
+      - generic [ref=e338] [cursor=pointer]:
+        - generic [ref=e339]: 🔗
+        - generic [ref=e340]:
+          - generic [ref=e341]: Smart Links
+          - paragraph [ref=e342]: A link for your messages and bios – all your info, ready to convert.
+  - generic [ref=e344]:
+    - generic [ref=e345]:
+      - generic [ref=e346]: Why businesses switch
+      - heading "Why businesses switch to Bazzcards" [level=2] [ref=e347]:
+        - text: Why businesses switch to
+        - text: Bazzcards
+      - paragraph [ref=e348]: A modern but simple approach to digital business cards for growing teams.
+    - generic [ref=e349]:
+      - generic [ref=e350]:
+        - generic [ref=e351]: 📈
+        - generic [ref=e352]: Generate more leads and sync to your CRM
+        - paragraph [ref=e353]: Turn profile views into saved leads. Contacts are stored automatically and can sync to your CRM for easy follow-up.
+        - generic [ref=e354]: ✓ No missed contacts and no manual data entry
+      - generic [ref=e355]:
+        - generic [ref=e356]: 🗂️
+        - generic [ref=e357]: Centralize all marketing and sales assets
+        - paragraph [ref=e358]: Control how marketing and sales assets are shared across your team. Present links, case studies, files, and content consistently on every profile.
+        - generic [ref=e359]: ✓ Every profile stays on brand and up to date
+      - generic [ref=e360]:
+        - generic [ref=e361]: ⚙️
+        - generic [ref=e362]: Admin dashboard for simple user management
+        - paragraph [ref=e363]: Company admins can manage users, organise groups, review activity, and access analytics all from one place.
+        - generic [ref=e364]: ✓ Day-to-day admin stays simple and controlled
+    - link "Get started for free →" [ref=e366] [cursor=pointer]:
+      - /url: "#"
+  - generic [ref=e368]:
+    - generic [ref=e369]:
+      - heading "Trusted by leading brands" [level=2] [ref=e370]
+      - paragraph [ref=e371]: Bazzcards powers digital business cards worldwide, from small teams to enterprise.
+    - generic [ref=e372]:
+      - generic [ref=e373]:
+        - generic [ref=e374]: "\""
+        - paragraph [ref=e375]: A game-changer for internal networking and a must-have when speaking to new clients and partners. We are thrilled and excited to expand its usage within our organisation.
+        - link "Read story →" [ref=e376] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e377]:
+        - generic [ref=e378]: "\""
+        - paragraph [ref=e379]: From day one they have been open, transparent, and keen to guide us down a path that worked best for us. It feels more like a collaboration — I'm excited to see how we can grow together.
+        - link "Read story →" [ref=e380] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e381]:
+        - generic [ref=e382]: "\""
+        - paragraph [ref=e383]: Fantastic, instructive, and quick! The tap-and-connect feature is great, and the dashboard makes tracking conference connections effortless for CRM updates.
+        - link "Read story →" [ref=e384] [cursor=pointer]:
+          - /url: "#"
+    - link "Read more case studies →" [ref=e386] [cursor=pointer]:
+      - /url: "#"
+  - generic [ref=e388]:
+    - generic [ref=e389]:
+      - heading "FAQs" [level=2] [ref=e390]
+      - paragraph [ref=e391]:
+        - text: If you have any more questions, don’t be shy!
+        - link "Get in touch." [ref=e392] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e393]:
+      - button "Do people need an app to use this? +" [ref=e395] [cursor=pointer]:
+        - generic [ref=e396]: Do people need an app to use this?
+        - generic [ref=e397]: +
+      - button "How does Bazzcards compare to others? +" [ref=e399] [cursor=pointer]:
+        - generic [ref=e400]: How does Bazzcards compare to others?
+        - generic [ref=e401]: +
+      - button "Can I update my details after sharing my card? +" [ref=e403] [cursor=pointer]:
+        - generic [ref=e404]: Can I update my details after sharing my card?
+        - generic [ref=e405]: +
+      - button "Why should businesses use digital business cards? +" [ref=e407] [cursor=pointer]:
+        - generic [ref=e408]: Why should businesses use digital business cards?
+        - generic [ref=e409]: +
+      - button "Will my team actually use this? +" [ref=e411] [cursor=pointer]:
+        - generic [ref=e412]: Will my team actually use this?
+        - generic [ref=e413]: +
+      - button "Is Bazzcards eco-friendly? +" [ref=e415] [cursor=pointer]:
+        - generic [ref=e416]: Is Bazzcards eco-friendly?
+        - generic [ref=e417]: +
+  - generic [ref=e419]:
+    - heading "Get started free today" [level=2] [ref=e420]
+    - paragraph [ref=e421]: Your next client, partner, or opportunity is one tap away.
+    - generic [ref=e422]:
+      - link "View pricing →" [ref=e423] [cursor=pointer]:
+        - /url: "#"
+      - link "Shop NFC Cards" [ref=e424] [cursor=pointer]:
+        - /url: "#"
+  - contentinfo [ref=e425]:
+    - generic [ref=e426]:
+      - generic [ref=e427]:
+        - generic [ref=e428]:
+          - link "Bazzcards" [ref=e429] [cursor=pointer]:
+            - /url: "#"
+            - img "Bazzcards" [ref=e430]
+          - paragraph [ref=e431]: Uganda's leading digital business card platform — built for East Africa.
+          - generic [ref=e432]:
+            - link "✉ support@bazzcards.com" [ref=e433] [cursor=pointer]:
+              - /url: mailto:support@bazzcards.com
+              - generic [ref=e434]: ✉
+              - text: support@bazzcards.com
+            - link "📞 +256 753 330 197" [ref=e435] [cursor=pointer]:
+              - /url: tel:+256753330197
+              - generic [ref=e436]: 📞
+              - text: +256 753 330 197
+            - generic [ref=e437]:
+              - generic [ref=e438]: 📍
+              - text: Plot 16, Upper Naguru Rd, Kampala
+          - generic [ref=e439]:
+            - link "in" [ref=e440] [cursor=pointer]:
+              - /url: "#"
+            - link "f" [ref=e441] [cursor=pointer]:
+              - /url: "#"
+            - link "▶" [ref=e442] [cursor=pointer]:
+              - /url: "#"
+            - link "⬜" [ref=e443] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e444]:
+          - generic [ref=e445]: Explore
+          - list [ref=e446]:
+            - listitem [ref=e447]:
+              - link "Pricing" [ref=e448] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e449]:
+              - link "Shop NFC Cards" [ref=e450] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e451]:
+              - link "Affiliate Program" [ref=e452] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e453]:
+          - generic [ref=e454]: Resources
+          - list [ref=e455]:
+            - listitem [ref=e456]:
+              - link "Blog" [ref=e457] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e458]:
+              - link "Customers" [ref=e459] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e460]:
+              - link "Data Security" [ref=e461] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e462]:
+              - link "About" [ref=e463] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e464]:
+              - link "Contact" [ref=e465] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e466]:
+          - generic [ref=e467]: Shop
+          - list [ref=e468]:
+            - listitem [ref=e469]:
+              - link "Metal NFC Business Card" [ref=e470] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e471]:
+              - link "Bamboo NFC Business Card" [ref=e472] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e473]:
+              - link "PVC NFC Business Card" [ref=e474] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e475]:
+          - generic [ref=e476]: Platform
+          - list [ref=e477]:
+            - listitem [ref=e478]:
+              - link "Sign In" [ref=e479] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e480]:
+              - link "Help Centre" [ref=e481] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e482]:
+              - link "Roadmap" [ref=e483] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e484]:
+              - link "Status Page" [ref=e485] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e486]:
+        - generic [ref=e487]: © 2026 BAZZCARDS. Based in Uganda 🇺🇬
+        - generic [ref=e488]:
+          - link "Delivery & Returns" [ref=e489] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy Policy" [ref=e490] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms & Conditions" [ref=e491] [cursor=pointer]:
+            - /url: "#"

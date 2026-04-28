@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Bazzcards</title>
+  <meta name="description" content="Bazzcards Privacy Policy - How we collect, use, and protect your data.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #85a700;
+      --brand-light: #96bc00;
+      --text-dark: #0A0E1A;
+      --text-muted: #6B7280;
+      --border: #E5E8EF;
+      --dark-bg: #07090F;
+      --dark-card: #0E1117;
+      --dark-border: rgba(255,255,255,0.07);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      background: #fff;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .navbar {
+      background: rgba(7,9,15,0.88);
+      backdrop-filter: blur(20px);
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--dark-border);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
+    .nav-logo img { height: 32px; filter: brightness(0) invert(1); }
+    .nav-logo span { color: #fff; font-weight: 700; font-size: 16px; }
+    .container { max-width: 720px; margin: 0 auto; padding: 64px 24px 96px; }
+    .page-header { margin-bottom: 48px; }
+    .page-label { font-size: 12px; font-weight: 700; color: var(--brand); letter-spacing: 1.8px; text-transform: uppercase; margin-bottom: 12px; }
+    h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -1.5px; color: var(--text-dark); margin-bottom: 16px; }
+    .page-meta { font-size: 14px; color: var(--text-muted); }
+    h2 { font-size: 20px; font-weight: 700; color: var(--text-dark); margin: 36px 0 12px; letter-spacing: -0.5px; }
+    h3 { font-size: 16px; font-weight: 600; color: var(--text-dark); margin: 24px 0 8px; }
+    p { font-size: 15px; color: var(--text-muted); margin-bottom: 16px; }
+    ul { margin: 0 0 16px 20px; }
+    li { font-size: 15px; color: var(--text-muted); margin-bottom: 8px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .contact-card { background: #F8FAFF; border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-top: 48px; }
+    .contact-card h3 { margin-top: 0; }
+    .contact-card p { margin-bottom: 8px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--brand); font-weight: 600; margin-bottom: 32px; }
+    
+    .footer { background: var(--dark-bg); padding: 72px 24px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; }
+    .ft-brand { padding-right: 32px; }
+    .ft-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 14px; }
+    .ft-logo-img { height: 28px; filter: brightness(0) invert(1); }
+    .ft-tag { font-size: 13px; color: rgba(255,255,255,.38); line-height: 1.6; margin-bottom: 20px; }
+    .ft-social { display: flex; gap: 8px; margin-top: 24px; }
+    .soc-link { width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; font-size: 13px; text-decoration: none; color: rgba(255,255,255,.6); transition: all .2s; }
+    .soc-link:hover { background: var(--brand); color: #fff; border-color: var(--brand); transform: translateY(-2px); }
+    .ft-col-ttl { font-size: 12px; font-weight: 700; color: rgba(255,255,255,.92); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 20px; }
+    .ft-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .ft-links a { font-size: 14px; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; display: block; padding: 4px 0; }
+    .ft-links a:hover { color: #fff; }
+    .footer-btm { display: flex; align-items: center; justify-content: space-between; padding-top: 32px; margin-top: 48px; border-top: 1px solid rgba(255,255,255,.055); }
+    .ft-copy { font-size: 13px; color: rgba(255,255,255,.35); }
+    .ft-legal { display: flex; gap: 28px; }
+    .ft-legal a { font-size: 13px; color: rgba(255,255,255,.35); text-decoration: none; transition: color .2s; }
+    .ft-legal a:hover { color: #fff; }
+    
+    @media (max-width: 768px) { .footer-top { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .footer-top { grid-template-columns: 1fr; } .footer-btm { flex-direction: column; gap: 16px; text-align: center; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="nav-logo">
+    <img src="bazzcards-logo.png" alt="Bazzcards">
+    <span>Bazzcards</span>
+  </a>
+</nav>
+
+<div class="container">
+  <a href="/" class="back-link">← Back to Bazzcards</a>
+  
+  <div class="page-header">
+    <div class="page-label">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="page-meta">Last updated: April 28, 2026</p>
+  </div>
+
+  <p>At Bazzcards, we take your privacy seriously. This Privacy Policy explains how Bazzcards ("we", "us", or "our") collects, uses, and protects information about you when you use our website, app, and NFC business card services.</p>
+
+  <h2>Information We Collect</h2>
+  
+  <h3>Information You Provide</h3>
+  <ul>
+    <li>Account information (name, email, phone number, job title, company)</li>
+    <li>Business card details and profile information you create</li>
+    <li>Any content or files you upload to your profile</li>
+    <li>Communications you send us</li>
+  </ul>
+
+  <h3>Information Collected Automatically</h3>
+  <ul>
+    <li>Device information (browser type, operating system, device identifiers)</li>
+    <li>Usage data (pages visited, features used, time spent)</li>
+    <li>Analytics data when someone views or saves your card</li>
+    <li>Log data (IP address, access times)</li>
+  </ul>
+
+  <h2>How We Use Your Information</h2>
+  <ul>
+    <li>To provide and maintain our services</li>
+    <li>To create and manage your account</li>
+    <li>To enable lead capture and contact sharing features</li>
+    <li>To send you service-related communications</li>
+    <li>To improve and optimise our platform</li>
+    <li>To enforce our Terms of Service</li>
+  </ul>
+
+  <h2>Information Sharing</h2>
+  <p>We do not sell your personal data. We may share information with:</p>
+  <ul>
+    <li>Service providers who help us operate our platform</li>
+    <li>Your consent, when you choose to share your profile with others</li>
+    <li>Legal requirements, when required by law</li>
+    <li>Business transfers, in the event of a merger or acquisition</li>
+  </ul>
+
+  <h2>Data Retention</h2>
+  <p>We retain your information for as long as your account is active or as needed to provide services. You may request deletion of your account and data at any time by contacting us at support@bazzcards.com.</p>
+
+  <h2>Data Security</h2>
+  <p>We use industry-standard security measures to protect your data, including encryption in transit and at rest, access controls, and regular security reviews. No method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+  <h2>Cookies</h2>
+  <p>We use cookies and similar technologies to maintain your session, understand usage patterns, and improve our services. You can control cookies through your browser settings.</p>
+
+  <h2>Your Rights</h2>
+  <p>Depending on your location, you may have the right to:</p>
+  <ul>
+    <li>Access your personal data</li>
+    <li>Correct inaccurate data</li>
+    <li>Request deletion of your data</li>
+    <li>Object to or restrict processing</li>
+    <li>Data portability</li>
+    <li>Withdraw consent</li>
+  </ul>
+
+  <h2>Children's Privacy</h2>
+  <p>Our services are not intended for users under 16 years of age. We do not knowingly collect data from children.</p>
+
+  <h2>International Transfers</h2>
+  <p>Your information may be transferred and processed in Uganda and other countries where our servers are located. We ensure appropriate safeguards are in place for international transfers.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy on our website and updating the "Last updated" date.</p>
+
+  <h2>Contact Us</h2>
+  <p>If you have questions about this Privacy Policy or want to exercise your rights, contact us:</p>
+  
+  <div class="contact-card">
+    <h3>Bazzcards Data Protection</h3>
+    <p><strong>Email:</strong> <a href="mailto:support@bazzcards.com">support@bazzcards.com</a></p>
+    <p><strong>Phone:</strong> +256 753 330 197</p>
+    <p><strong>Address:</strong> Plot 16, Upper Naguru Rd, Kampala, Uganda</p>
+  </div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+
+      <div class="ft-brand">
+        <a href="/" class="ft-logo">
+          <img src="bazzcards-logo.png" alt="Bazzcards" class="ft-logo-img">
+        </a>
+        <p class="ft-tag">Uganda's leading digital business card platform — built for East Africa.</p>
+        <div class="ft-social">
+          <a href="https://linkedin.com/company/bazzcards" class="soc-link" target="_blank" rel="noopener">in</a>
+          <a href="https://facebook.com/bazzcards" class="soc-link" target="_blank" rel="noopener">f</a>
+          <a href="https://youtube.com/@bazzcards" class="soc-link" target="_blank" rel="noopener">▶</a>
+          <a href="https://instagram.com/bazzcards" class="soc-link" target="_blank" rel="noopener">✦</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">Platform</div>
+        <ul class="ft-links">
+          <li><a href="https://app.bazzcards.com/">Sign In</a></li>
+          <li><a href="/shop.html">Shop NFC Cards</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">Resources</div>
+        <ul class="ft-links">
+          <li><a href="/#customers">Customers</a></li>
+          <li><a href="/#how-it-works">How It Works</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">Contact</div>
+        <ul class="ft-links">
+          <li><a href="mailto:support@bazzcards.com">support@bazzcards.com</a></li>
+          <li><a href="tel:+256753330197">+256 753 330 197</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-btm">
+      <div class="ft-copy">&copy; 2026 BAZZCARDS. Based in Uganda</div>
+      <div class="ft-legal">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

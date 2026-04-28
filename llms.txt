@@ -1,0 +1,46 @@
+# Bazzcards
+
+> Uganda's leading digital business card platform — built for East Africa and professionals worldwide.
+
+Bazzcards is a SaaS platform that enables professionals and businesses to create smart digital business cards with built-in lead capture, NFC card options, team management, and CRM integrations. Trusted by 10,000+ professionals worldwide.
+
+## What Bazzcards Does
+
+Bazzcards replaces paper business cards with smart digital profiles that can be shared instantly via link, QR code, or NFC tap. When someone receives your card, their contact details are automatically captured as a lead — no manual entry required.
+
+## Key Features
+
+- **Digital Business Cards**: Create and share professional digital business cards instantly via link or QR code
+- **NFC Cards**: Premium metal and PVC NFC cards that tap-to-share your digital profile
+- **Lead Capture**: Automatically capture contact details from people who view or tap your card
+- **Team Management**: Admin dashboard to manage your entire team's digital card presence
+- **CRM Integrations**: Sync captured leads directly to your CRM
+- **Analytics**: Track card views, lead captures, and engagement
+- **Apple Wallet & Google Wallet**: Save your card to mobile wallets
+- **Email Signature**: Add your digital card to your email signature
+
+## How It Works
+
+1. Create your digital business card and your team's cards
+2. Build a profile that helps people take the next step (links, social, videos)
+3. Share anywhere instantly — NFC tap, QR code, link, or email signature
+4. Capture leads automatically and follow up to close deals
+
+## Pricing
+
+- Free plan available for individuals
+- Team and Business plans for growing organizations
+- Premium NFC metal and PVC physical cards available for purchase
+
+## Company
+
+- **Name**: Bazzcards
+- **Location**: Plot 16, Upper Naguru Rd, Kampala, Uganda
+- **Market**: East Africa, Global
+- **Contact**: support@bazzcards.com
+- **Phone**: +256 753 330 197
+
+## Links
+
+- [Landing Page](https://bazzcards.com/)
+- [Sign In / Dashboard](https://app.bazzcards.com/)
