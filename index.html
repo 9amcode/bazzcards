@@ -2243,9 +2243,9 @@
     <!-- Success screen (replaces everything above) -->
     <div class="modal-success" id="modalSuccess">
       <div class="success-icon">🎉</div>
-      <div class="success-title">You're all set!</div>
-      <div class="success-sub">Your Bazzcards account is ready. Tap below to create your first digital card.</div>
-      <a href="https://app.bazzcards.com/" target="_blank" class="btn-go-app">Go to my dashboard →</a>
+      <div class="success-title">We'll be in touch!</div>
+      <div class="success-sub">Thanks for your interest. Our team will reach out to you shortly to get you set up.</div>
+      <a href="https://app.bazzcards.com/" target="_blank" class="btn-go-app">Explore the dashboard →</a>
     </div>
 
   </div><!-- /modal -->
@@ -2361,20 +2361,54 @@
     return valid;
   }
 
-  function wizardNext() {
+  async function wizardNext() {
     if (!validateStep(currentStep)) return;
     if (currentStep < totalSteps - 1) {
       currentStep++;
       updateStepUI();
       slideToStep(currentStep);
     } else {
-      const modal = document.getElementById('modal');
-      modal.querySelector('.modal-progress').style.display = 'none';
-      modal.querySelector('.modal-header').style.display = 'none';
-      modal.querySelector('.modal-body').style.display = 'none';
-      document.getElementById('modalFooter').style.display = 'none';
-      const success = document.getElementById('modalSuccess');
-      success.classList.add('show');
+      const btn = document.getElementById('btnNext');
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+
+      const plan = document.querySelector('.plan-card.selected')?.dataset.plan || 'personal';
+      const data = {
+        access_key: '312996ee-8e8f-44e8-9f4d-b443187c4e8a',
+        subject: 'New Bazzcards Inquiry — ' + document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value,
+        from_name: 'Bazzcards Website',
+        name: document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value,
+        job_title: document.getElementById('jobTitle').value,
+        industry: document.getElementById('industry').value,
+        plan: plan,
+        botcheck: ''
+      };
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const json = await res.json();
+        if (json.success) {
+          const modal = document.getElementById('modal');
+          modal.querySelector('.modal-progress').style.display = 'none';
+          modal.querySelector('.modal-header').style.display = 'none';
+          modal.querySelector('.modal-body').style.display = 'none';
+          document.getElementById('modalFooter').style.display = 'none';
+          document.getElementById('modalSuccess').classList.add('show');
+        } else {
+          throw new Error(json.message || 'Submission failed');
+        }
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = 'Create my card 🎉';
+        alert('Something went wrong. Please try again or email us at support@bazzcards.com');
+      }
     }
   }
 
