@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partner with Bazzcards — Earn Commission on Every Sale</title>
+  <meta name="description" content="Refer businesses to Bazzcards and earn 5–10% on every sale. Free to join, no targets to start, real commission on real deals. Apply to become a Bazzcards partner.">
+  <meta property="og:title" content="Partner with Bazzcards — Earn Commission on Every Sale">
+  <meta property="og:description" content="Refer professionals and businesses to Bazzcards and earn commission on every sale. Free to join. No upfront costs.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #99cc00;
+      --brand-light: #aadd00;
+      --brand-dark: #7aaa00;
+      --dark-bg: #161616;
+      --dark-card: #1e1e1e;
+      --dark-border: rgba(255,255,255,0.07);
+      --text-dark: #0A0E1A;
+      --text-muted: #6B7280;
+      --border: #E5E8EF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Switzer', sans-serif; color: var(--text-dark); background: #fff; -webkit-font-smoothing: antialiased; line-height: 1.6; }
+
+    /* ── NAV ── */
+    .navbar { position: sticky; top: 0; z-index: 100; background: rgba(22,22,22,0.88); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--dark-border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; gap: 32px; }
+    .nav-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; flex-shrink: 0; }
+    .nav-logo-img { height: 32px; width: auto; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 2px; flex: 1; }
+    .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: 8px; transition: all .2s; }
+    .nav-links a:hover { color: #fff; background: rgba(255,255,255,0.06); }
+    .nav-ctas { display: flex; align-items: center; gap: 8px; }
+    .btn-ghost-sm { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.13); transition: all .2s; }
+    .btn-ghost-sm:hover { background: rgba(255,255,255,0.07); color: #fff; }
+    .btn-primary-sm { background: var(--brand); color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 8px 18px; border-radius: 8px; transition: all .2s; }
+    .btn-primary-sm:hover { background: var(--brand-light); transform: translateY(-1px); }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; margin-left: auto; flex-direction: column; gap: 5px; min-width: 44px; min-height: 44px; align-items: center; justify-content: center; touch-action: manipulation; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: rgba(255,255,255,0.85); border-radius: 2px; transition: all .25s ease; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-nav { display: none; position: fixed; top: 64px; left: 0; right: 0; background: rgba(7,9,15,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--dark-border); z-index: 99; padding: 12px 0 20px; flex-direction: column; }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 16px; font-weight: 500; padding: 14px 24px; display: flex; align-items: center; min-height: 44px; transition: color .2s; touch-action: manipulation; }
+    .mobile-nav a:hover { color: #fff; background: rgba(255,255,255,0.04); }
+    .mobile-nav .mobile-nav-divider { height: 1px; background: var(--dark-border); margin: 8px 24px; }
+    .mobile-nav .mobile-nav-ctas { display: flex; flex-direction: column; gap: 10px; padding: 12px 24px 4px; }
+    .mobile-nav .btn-ghost-sm, .mobile-nav .btn-primary-sm { text-align: center; padding: 13px 20px; min-height: 44px; font-size: 15px; border-radius: 10px; justify-content: center; }
+
+    /* ── HERO ── */
+    .hero { background: var(--dark-bg); padding: 100px 24px 96px; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 50% at 50% -10%, rgba(153,204,0,.18) 0%, transparent 70%); pointer-events: none; }
+    .hero-inner { max-width: 720px; margin: 0 auto; position: relative; }
+    .hero-pill { display: inline-flex; align-items: center; gap: 8px; background: rgba(153,204,0,.1); border: 1px solid rgba(153,204,0,.22); color: var(--brand); font-size: 11px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; padding: 6px 16px; border-radius: 100px; margin-bottom: 32px; }
+    .hero-h1 { font-size: clamp(42px, 7vw, 72px); font-weight: 800; line-height: 1.04; letter-spacing: -2.5px; color: #fff; margin-bottom: 24px; }
+    .hero-h1 .em { color: var(--brand); }
+    .hero-sub { font-size: clamp(16px, 2vw, 18px); color: rgba(255,255,255,.56); max-width: 580px; margin: 0 auto 40px; line-height: 1.75; }
+    .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-brand { background: var(--brand); color: #0A0E1A; font-size: 15px; font-weight: 700; text-decoration: none; padding: 14px 28px; border-radius: 10px; transition: all .2s; display: inline-flex; align-items: center; gap: 6px; }
+    .btn-brand:hover { background: var(--brand-light); transform: translateY(-1px); }
+    .btn-outline { color: rgba(255,255,255,.75); font-size: 15px; font-weight: 600; text-decoration: none; padding: 14px 28px; border-radius: 10px; border: 1px solid rgba(255,255,255,.15); transition: all .2s; display: inline-flex; align-items: center; gap: 6px; }
+    .btn-outline:hover { color: #fff; border-color: rgba(255,255,255,.35); }
+
+    /* ── SHARED ── */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .sec-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--brand); margin-bottom: 14px; }
+    .sec-title { font-size: clamp(28px, 4vw, 44px); font-weight: 800; letter-spacing: -1.8px; color: var(--text-dark); margin-bottom: 16px; line-height: 1.08; }
+    .sec-title.light { color: #fff; }
+    .sec-sub { font-size: 17px; color: var(--text-muted); max-width: 540px; line-height: 1.7; }
+    .sec-sub.light { color: rgba(255,255,255,.5); }
+    .sec-head { margin-bottom: 56px; }
+
+    /* ── HOW IT WORKS ── */
+    .how { padding: 96px 24px; background: #fff; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+    .step-num { width: 40px; height: 40px; border-radius: 12px; background: rgba(153,204,0,.1); border: 1px solid rgba(153,204,0,.2); display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; color: var(--brand); margin-bottom: 20px; }
+    .step-title { font-size: 18px; font-weight: 700; color: var(--text-dark); margin-bottom: 10px; letter-spacing: -0.4px; }
+    .step-body { font-size: 15px; color: var(--text-muted); line-height: 1.75; }
+
+    /* ── COMMISSION ── */
+    .commission { padding: 96px 24px; background: #F8FAFF; text-align: center; }
+    .commission .sec-sub { margin-left: auto; margin-right: auto; }
+    .tiers { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 800px; margin: 0 auto 28px; text-align: left; }
+    .tier-card { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 36px; }
+    .tier-card.featured { background: var(--dark-bg); border-color: var(--brand); }
+    .tier-label { font-size: 11px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; }
+    .tier-card.featured .tier-label { color: rgba(255,255,255,.4); }
+    .tier-pct { font-size: 80px; font-weight: 900; letter-spacing: -4px; color: var(--text-dark); line-height: 1; margin-bottom: 6px; }
+    .tier-pct span { font-size: 32px; font-weight: 700; letter-spacing: -1px; vertical-align: super; }
+    .tier-card.featured .tier-pct { color: var(--brand); }
+    .tier-name { font-size: 16px; font-weight: 700; color: var(--text-dark); margin-bottom: 16px; letter-spacing: -0.3px; }
+    .tier-card.featured .tier-name { color: #fff; }
+    .tier-body { font-size: 14px; color: var(--text-muted); line-height: 1.75; margin-bottom: 20px; }
+    .tier-card.featured .tier-body { color: rgba(255,255,255,.45); }
+    .tier-example { background: rgba(153,204,0,.08); border: 1px solid rgba(153,204,0,.18); border-radius: 10px; padding: 12px 14px; font-size: 13px; color: var(--brand-dark); font-weight: 500; line-height: 1.55; }
+    .tier-card.featured .tier-example { background: rgba(153,204,0,.1); color: var(--brand); border-color: rgba(153,204,0,.25); }
+    .tier-smallprint { font-size: 13px; color: var(--text-muted); max-width: 800px; line-height: 1.65; }
+
+    /* ── WHO ── */
+    .who { padding: 96px 24px; background: #fff; }
+    .profiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .profile-card { border: 1px solid var(--border); border-radius: 20px; padding: 32px; transition: border-color .2s; }
+    .profile-card:hover { border-color: rgba(153,204,0,.4); }
+    .profile-icon { width: 48px; height: 48px; background: rgba(153,204,0,.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .profile-icon svg { width: 22px; height: 22px; }
+    .profile-title { font-size: 17px; font-weight: 700; color: var(--text-dark); margin-bottom: 10px; letter-spacing: -0.3px; }
+    .profile-body { font-size: 14px; color: var(--text-muted); line-height: 1.75; }
+
+    /* ── WHY ── */
+    .why { padding: 96px 24px; background: var(--dark-bg); }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid rgba(255,255,255,.07); border-radius: 20px; overflow: hidden; }
+    .why-item { padding: 44px; border-right: 1px solid rgba(255,255,255,.07); border-bottom: 1px solid rgba(255,255,255,.07); transition: background .2s; }
+    .why-item:hover { background: rgba(255,255,255,.03); }
+    .why-item:nth-child(2n) { border-right: none; }
+    .why-item:nth-last-child(-n+2) { border-bottom: none; }
+    .why-num { font-size: 11px; font-weight: 700; color: var(--brand); letter-spacing: 2px; margin-bottom: 18px; }
+    .why-title { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 10px; letter-spacing: -0.4px; }
+    .why-body { font-size: 14px; color: rgba(255,255,255,.44); line-height: 1.8; }
+
+    /* ── FAQ ── */
+    .faq { padding: 96px 24px; background: #F8FAFF; text-align: center; }
+    .faq .sec-head { max-width: 720px; margin-left: auto; margin-right: auto; }
+    .faq-list { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 4px; }
+    .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+    .faq-q { width: 100%; background: none; border: none; padding: 20px 24px; text-align: left; font-family: 'Switzer', sans-serif; font-size: 15px; font-weight: 700; color: var(--text-dark); cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 12px; transition: color .2s; }
+    .faq-q:hover { color: var(--brand); }
+    .faq-icon { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: rgba(153,204,0,.1); display: flex; align-items: center; justify-content: center; transition: transform .25s, background .2s; }
+    .faq-icon svg { width: 10px; height: 10px; stroke: var(--brand); transition: transform .25s; }
+    .faq-item.open .faq-icon { background: var(--brand); transform: rotate(45deg); }
+    .faq-item.open .faq-icon svg { stroke: #fff; }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .faq-a-inner { padding: 0 24px 20px; font-size: 14px; color: var(--text-muted); line-height: 1.8; }
+    .faq-item.open .faq-a { max-height: 300px; }
+
+    /* ── APPLY ── */
+    .apply { padding: 96px 24px; background: var(--dark-bg); display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .apply-wrap { max-width: 640px; width: 100%; }
+    .apply .sec-sub { margin-left: auto; margin-right: auto; }
+    .form-grid { text-align: left; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 40px; }
+    .form-group { display: flex; flex-direction: column; gap: 7px; }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-group label { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.45); letter-spacing: .8px; text-transform: uppercase; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea { width: 100%; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: 10px; padding: 13px 15px; color: #fff; font-family: 'Switzer', sans-serif; font-size: 14px; transition: all .2s; outline: none; -webkit-appearance: none; appearance: none; }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(255,255,255,.2); }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--brand); background: rgba(153,204,0,.05); }
+    .form-group select { color: rgba(255,255,255,.65); cursor: pointer; }
+    .form-group select option { background: #1e1e1e; color: #fff; }
+    .form-group textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
+    .form-submit { width: 100%; background: var(--brand); color: #0A0E1A; font-size: 15px; font-weight: 700; padding: 15px; border-radius: 12px; border: none; cursor: pointer; font-family: 'Switzer', sans-serif; transition: all .2s; margin-top: 4px; }
+    .form-submit:hover { background: var(--brand-light); transform: translateY(-1px); }
+    .form-submit:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+    .form-note { font-size: 13px; color: rgba(255,255,255,.28); margin-top: 16px; line-height: 1.65; }
+    .form-success { display: none; background: rgba(153,204,0,.08); border: 1px solid rgba(153,204,0,.22); border-radius: 16px; padding: 40px 32px; text-align: center; margin-top: 40px; }
+    .form-success h3 { color: var(--brand); font-size: 22px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 10px; }
+    .form-success p { color: rgba(255,255,255,.48); font-size: 15px; line-height: 1.65; }
+
+    /* ── FOOTER ── */
+    .footer { background: var(--dark-bg); padding: 72px 24px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; }
+    .ft-brand { padding-right: 32px; }
+    .ft-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 14px; }
+    .ft-logo-img { height: 44px; width: auto; display: block; }
+    .ft-tag { font-size: 13px; color: rgba(255,255,255,.38); line-height: 1.6; margin-bottom: 20px; }
+    .ft-social { display: flex; gap: 8px; margin-top: 24px; }
+    .soc-link { width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; font-size: 13px; text-decoration: none; color: rgba(255,255,255,.6); transition: all .2s; }
+    .soc-link:hover { background: var(--brand); color: #fff; border-color: var(--brand); transform: translateY(-2px); }
+    .ft-col-ttl { font-size: 12px; font-weight: 700; color: rgba(255,255,255,.92); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 20px; }
+    .ft-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .ft-links a { font-size: 14px; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; display: block; padding: 4px 0; }
+    .ft-links a:hover { color: #fff; }
+    .footer-btm { display: flex; align-items: center; justify-content: space-between; padding-top: 32px; margin-top: 48px; border-top: 1px solid rgba(255,255,255,.055); }
+    .ft-copy { font-size: 13px; color: rgba(255,255,255,.35); }
+    .ft-legal { display: flex; gap: 28px; }
+    .ft-legal a { font-size: 13px; color: rgba(255,255,255,.35); text-decoration: none; transition: color .2s; }
+    .ft-legal a:hover { color: #fff; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .steps { grid-template-columns: 1fr; gap: 32px; }
+      .profiles { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .why-item { border-right: none; }
+      .why-item:nth-last-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,.07); }
+      .why-item:last-child { border-bottom: none; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 720px) {
+      .tiers { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .nav-ctas { display: none; }
+      .nav-hamburger { display: flex; }
+    }
+    @media (max-width: 480px) {
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-btm { flex-direction: column; gap: 16px; text-align: center; }
+      .ft-legal { flex-direction: column; gap: 10px; align-items: center; }
+      .hero-btns { flex-direction: column; align-items: center; }
+      .hero-btns a { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="bazz-logo-green.svg" alt="Bazz" class="nav-logo-img">
+    </a>
+    <div class="nav-links">
+      <a href="/#how-it-works">How It Works</a>
+      <a href="/shop">Shop</a>
+      <a href="/corporate">For Teams</a>
+    </div>
+    <div class="nav-ctas">
+      <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
+      <a href="/shop" class="btn-primary-sm">Get Started</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="/#how-it-works">How It Works</a>
+  <a href="/shop">Shop</a>
+  <a href="/corporate">For Businesses</a>
+  <div class="mobile-nav-divider"></div>
+  <div class="mobile-nav-ctas">
+    <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
+    <a href="/shop" class="btn-primary-sm">Get Started</a>
+  </div>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-pill">Bazzcards Partner Programme</div>
+    <h1 class="hero-h1">Grow with us.<br>Earn on every<br><span class="em">deal you bring.</span></h1>
+    <p class="hero-sub">Refer professionals and businesses to Bazzcards and earn commission on every sale — from a single card to a full corporate rollout. Free to join. No upfront costs. Real earnings for real introductions.</p>
+    <div class="hero-btns">
+      <a href="#apply" class="btn-brand">Apply to Partner &rarr;</a>
+      <a href="#how" class="btn-outline">See how it works &darr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ── -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-label">How it works</div>
+      <h2 class="sec-title">Three steps to your first commission.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-title">Apply and get approved.</div>
+        <p class="step-body">Fill in the short application below. We review every application personally and get back to you within 2 business days. Once approved, you get your unique referral link and access to your partner dashboard.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-title">Share Bazzcards with your network.</div>
+        <p class="step-body">Introduce Bazzcards to professionals, businesses, HR teams, and organisations in your network. Use your referral link, share it on WhatsApp, LinkedIn, email — however you communicate. Every visit tracked back to you counts.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-title">Earn on every confirmed sale.</div>
+        <p class="step-body">When a lead you referred purchases — whether it's a single personal card or a corporate order of 100 — you earn commission. Tracked automatically in your dashboard. Paid out once confirmed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── COMMISSION STRUCTURE ── -->
+<section class="commission" id="commission">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-label">What you earn</div>
+      <h2 class="sec-title">Simple, transparent commission. No games.</h2>
+      <p class="sec-sub">You earn a percentage of every confirmed sale referred through your link. The more consistent you are, the more you earn.</p>
+    </div>
+    <div class="tiers">
+      <div class="tier-card">
+        <div class="tier-label">Getting started</div>
+        <div class="tier-pct"><span>%</span>5</div>
+        <div class="tier-name">Starter</div>
+        <p class="tier-body">Every partner starts here. Earn 5% on every confirmed sale you refer — individual cards, corporate orders, everything. No minimum volume required to join.</p>
+        <div class="tier-example">Refer a 30-card corporate order &rarr; earn your 5% on the full order value.</div>
+      </div>
+      <div class="tier-card featured">
+        <div class="tier-label">Once you hit targets</div>
+        <div class="tier-pct"><span>%</span>10</div>
+        <div class="tier-name">Growth</div>
+        <p class="tier-body">Hit your monthly targets consistently and we bump you to 10% — automatically. No renegotiating, no asking. We track it and upgrade you when you've earned it.</p>
+        <div class="tier-example">Refer a 50-card corporate order at 10% &rarr; double what you started with.</div>
+      </div>
+    </div>
+    <p class="tier-smallprint">Commission is calculated on confirmed, paid orders. Payouts processed monthly. Full terms shared on approval.</p>
+  </div>
+</section>
+
+<!-- ── WHO THIS IS FOR ── -->
+<section class="who" id="who">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-label">Who should apply</div>
+      <h2 class="sec-title">Built for people who know people.</h2>
+      <p class="sec-sub">You don't need to be a salesperson. You need to know businesses, professionals, or organisations who could use a smarter way to connect.</p>
+    </div>
+    <div class="profiles">
+      <div class="profile-card">
+        <div class="profile-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div class="profile-title">Individual Networkers</div>
+        <p class="profile-body">Consultants, business coaches, event organisers, community leaders, content creators with a professional audience. If you move in circles where business cards come up — this is for you.</p>
+      </div>
+      <div class="profile-card">
+        <div class="profile-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2"/>
+            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+            <line x1="12" y1="12" x2="12" y2="16"/>
+            <line x1="10" y1="14" x2="14" y2="14"/>
+          </svg>
+        </div>
+        <div class="profile-title">Agencies &amp; Service Businesses</div>
+        <p class="profile-body">Marketing agencies, PR firms, HR consultancies, business registration services, printing companies. If you already serve businesses that would benefit from Bazzcards — add it to what you offer.</p>
+      </div>
+      <div class="profile-card">
+        <div class="profile-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div class="profile-title">Corporate &amp; Institutional Contacts</div>
+        <p class="profile-body">Anyone with access to companies, banks, hotels, hospitals, law firms, schools, or large organisations. A single corporate referral can be a significant order — and your commission reflects that.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY PARTNER ── -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-label">Why it works</div>
+      <h2 class="sec-title light">A product that sells itself.<br>A commission that rewards you.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-num">01</div>
+        <div class="why-title">The product does the talking.</div>
+        <p class="why-body">When someone taps a Bazzcard for the first time, they want one. You don't have to convince people — you just have to introduce them. The demo is built into every card already in the market.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">02</div>
+        <div class="why-title">Corporate orders mean serious commission.</div>
+        <p class="why-body">A 50-card corporate order at UGX 70,000 per card is a UGX 3,500,000 order. At 5% that's UGX 175,000 from one referral. At 10% that's UGX 350,000. One good corporate introduction goes a long way.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">03</div>
+        <div class="why-title">Your dashboard tracks everything.</div>
+        <p class="why-body">You always know where you stand. Every click, every referral, every confirmed order and every pending payout — visible in real time. No chasing us for updates.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">04</div>
+        <div class="why-title">No ceiling on what you can earn.</div>
+        <p class="why-body">There's no cap on how many referrals you can make or how much you can earn. Scale it as big as you want — one introduction a month or ten a week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="sec-head">
+      <h2 class="sec-title">Questions before you apply.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is there a cost to join?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">No. The Bazzcards Partner Programme is completely free to join. There are no sign-up fees, no monthly fees, and no minimum order requirements.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What counts as a confirmed sale?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">A confirmed sale is any paid order where the customer used your unique referral link or listed you as their referring partner. Commission is calculated on the final order value, excluding delivery.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          When do I get paid?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Commissions are processed monthly. You'll receive a payout summary at the end of each month for all confirmed orders from that period.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can I refer both individual buyers and corporate clients?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Yes — your referral link works for everything. Individual card purchases, small team orders, large corporate rollouts. Commission applies to all of them.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What happens when I hit the 10% tier?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">We review partner performance monthly. When you've consistently hit targets, we upgrade your commission rate automatically and notify you. The threshold will be communicated to you when you're approved.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can I partner if I'm outside Uganda?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. We operate across multiple markets. If you have a relevant network in your market, we want to hear from you.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── APPLICATION FORM ── -->
+<section class="apply" id="apply">
+  <div class="container">
+    <div class="apply-wrap">
+      <div class="sec-label">Apply now</div>
+      <h2 class="sec-title light">Ready to start earning?</h2>
+      <p class="sec-sub light">Fill in the form below. We review every application personally and respond within 2 business days.</p>
+
+      <form class="form-grid" id="partnerForm">
+        <input type="hidden" name="access_key" value="312996ee-8e8f-44e8-9f4d-b443187c4e8a">
+        <input type="hidden" name="subject" id="formSubject" value="Partner Application — Bazzcards">
+        <input type="hidden" name="from_name" value="Bazzcards Partner Form">
+        <input type="checkbox" name="botcheck" style="display:none">
+
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" name="full_name" id="fieldName" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label>Phone / WhatsApp *</label>
+          <input type="tel" name="phone" placeholder="+XXX 700 000 000" required>
+        </div>
+        <div class="form-group">
+          <label>Country *</label>
+          <select name="country" id="fieldCountry" required>
+            <option value="" disabled selected>Select your country</option>
+            <option>Uganda</option>
+            <option>Kenya</option>
+            <option>Tanzania</option>
+            <option>Rwanda</option>
+            <option>Burundi</option>
+            <option>South Sudan</option>
+            <option>DRC</option>
+            <option>Ethiopia</option>
+            <option>Nigeria</option>
+            <option>Ghana</option>
+            <option>South Africa</option>
+            <option>Egypt</option>
+            <option>United Arab Emirates</option>
+            <option>United Kingdom</option>
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label>How would you describe yourself? *</label>
+          <select name="partner_type" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Individual / Freelancer</option>
+            <option>Agency or consultancy</option>
+            <option>Corporate / Institutional contact</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label>Tell us about your network *</label>
+          <textarea name="network_description" placeholder="Who do you know that would benefit from Bazzcards? Tell us about your audience, industry connections, or the kinds of organisations you work with." required></textarea>
+        </div>
+        <div class="form-group full">
+          <label>How did you hear about the partner programme?</label>
+          <input type="text" name="referral_source" placeholder="WhatsApp, LinkedIn, a friend…">
+        </div>
+        <div class="form-group full">
+          <button type="submit" class="form-submit">Submit Application &rarr;</button>
+          <p class="form-note">We review every application personally. You'll hear from us within 2 business days. If approved, you'll receive your referral link and partner dashboard access by email.</p>
+        </div>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <h3>Application received.</h3>
+        <p>We'll review it personally and get back to you within 2 business days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+
+      <div class="ft-brand">
+        <a href="/" class="ft-logo">
+          <img src="bazz-logo-green.svg" alt="Bazz" class="ft-logo-img">
+        </a>
+        <p class="ft-tag">One Tap. Endless Possibilities.</p>
+        <div class="ft-social">
+          <a href="https://www.instagram.com/bazzcards" class="soc-link" title="Instagram" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@bazzcards" class="soc-link" title="TikTok" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.74a4.85 4.85 0 0 1-1.01-.05z"/></svg>
+          </a>
+          <a href="https://x.com/bazzcardz" class="soc-link" title="X" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/bazzcards/" class="soc-link" title="LinkedIn" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">Platform</div>
+        <ul class="ft-links">
+          <li><a href="/#how-it-works">How It Works</a></li>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="/corporate">For Teams</a></li>
+          <li><a href="https://app.bazzcards.com/">Sign In</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">Company</div>
+        <ul class="ft-links">
+          <li><a href="/#customers">About</a></li>
+          <li><a href="/#customers">Testimonials</a></li>
+          <li><a href="/partners">Partner Programme</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">Contact</div>
+        <ul class="ft-links">
+          <li><a href="mailto:support@bazzcards.com">support@bazzcards.com</a></li>
+          <li><a href="tel:+256753330197">+256 753 330 197</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-btm">
+      <div class="ft-copy">&copy; 2026 Bazzcards</div>
+      <div class="ft-legal">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMobileNav() {
+  const nav = document.getElementById('mobileNav');
+  const btn = document.getElementById('hamburger');
+  nav.classList.toggle('open');
+  btn.classList.toggle('open');
+}
+
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+document.getElementById('partnerForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const name = document.getElementById('fieldName').value;
+  const country = document.getElementById('fieldCountry').value;
+  document.getElementById('formSubject').value = `Partner Application — ${name} (${country})`;
+  const btn = this.querySelector('.form-submit');
+  btn.textContent = 'Submitting…';
+  btn.disabled = true;
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: new FormData(this)
+    });
+    const data = await res.json();
+    if (data.success) {
+      this.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    } else {
+      btn.textContent = 'Something went wrong — try again';
+      btn.disabled = false;
+    }
+  } catch {
+    btn.textContent = 'Something went wrong — try again';
+    btn.disabled = false;
+  }
+});
+</script>
+</body>
+</html>

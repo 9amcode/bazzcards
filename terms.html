@@ -75,7 +75,7 @@
     /* ── FOOTER ── */
     .footer { background: var(--dark-bg); padding: 72px 24px 32px; }
     .footer-inner { max-width: 1200px; margin: 0 auto; }
-    .footer-top { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+    .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; }
     .ft-brand { padding-right: 32px; }
     .ft-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 14px; }
     .ft-logo-img { height: 44px; width: auto; display: block; }
@@ -112,17 +112,18 @@
 
 <nav class="navbar">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
+    <a href="/" class="nav-logo">
       <img src="bazz-logo-green.svg" alt="Bazz" class="nav-logo-img">
     </a>
     <div class="nav-links">
-      <a href="index.html#how-it-works">How It Works</a>
-      <a href="shop.html">Shop</a>
-      <a href="corporate.html">For Teams</a>
+      <a href="/#how-it-works">How It Works</a>
+      <a href="/shop">Shop</a>
+      <a href="/corporate">For Teams</a>
+      <a href="/partners">Partners</a>
     </div>
     <div class="nav-ctas">
       <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
-      <a href="corporate.html" class="btn-primary-sm">Get Started</a>
+      <a href="/corporate" class="btn-primary-sm">Get Started</a>
     </div>
     <button class="nav-hamburger" id="hamburger" aria-label="Open menu" onclick="toggleMobileNav()">
       <span></span><span></span><span></span>
@@ -131,18 +132,18 @@
 </nav>
 
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html#how-it-works">How It Works</a>
-  <a href="shop.html">Shop</a>
-  <a href="corporate.html">For Teams</a>
+  <a href="/#how-it-works">How It Works</a>
+  <a href="/shop">Shop</a>
+  <a href="/corporate">For Teams</a>
   <div class="mobile-nav-divider"></div>
   <div class="mobile-nav-ctas">
     <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
-    <a href="corporate.html" class="btn-primary-sm">Get Started</a>
+    <a href="/corporate" class="btn-primary-sm">Get Started</a>
   </div>
 </div>
 
 <div class="container">
-  <a href="index.html" class="back-link">← Back to Bazzcards</a>
+  <a href="/" class="back-link">← Back to Bazzcards</a>
 
   <div class="page-header">
     <div class="page-label">Legal</div>
@@ -252,7 +253,7 @@
     <div class="footer-top">
 
       <div class="ft-brand">
-        <a href="index.html" class="ft-logo">
+        <a href="/" class="ft-logo">
           <img src="bazz-logo-green.svg" alt="Bazz" class="ft-logo-img">
         </a>
         <p class="ft-tag">One Tap. Endless Possibilities.</p>
@@ -275,10 +276,20 @@
       <div>
         <div class="ft-col-ttl">Platform</div>
         <ul class="ft-links">
-          <li><a href="index.html#how-it-works">How It Works</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="corporate.html">For Teams</a></li>
+          <li><a href="/#how-it-works">How It Works</a></li>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="/corporate">For Teams</a></li>
           <li><a href="https://app.bazzcards.com/">Sign In</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="ft-col-ttl">Company</div>
+        <ul class="ft-links">
+          <li><a href="/#customers">About</a></li>
+          <li><a href="/#customers">Testimonials</a></li>
+          <li><a href="/partners">Partner Programme</a></li>
+          <li><a href="/#faq">FAQ</a></li>
         </ul>
       </div>
 
@@ -292,10 +303,10 @@
 
     </div>
     <div class="footer-btm">
-      <div class="ft-copy">&copy; 2026 Bazzcards. Based in Uganda</div>
+      <div class="ft-copy">&copy; 2026 Bazzcards</div>
       <div class="ft-legal">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms &amp; Conditions</a>
       </div>
     </div>
   </div>
