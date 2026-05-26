@@ -17,12 +17,24 @@ Static landing page website for NFC digital business card service in Uganda.
 
 ## Brand Colors
 ```
---brand: #85a700 (green)
---brand-light: #96bc00
---dark-bg: #07090F
+--brand: #99cc00 (Yellow Green)
+--brand-light: #aadd00
+--brand-dark: #7aaa00
+--accent: #58584c (Ebony)
+--dark-bg: #161616 (Onyx)
+--off-white: #faeee1 (Linen)
 --text-dark: #0A0E1A
 --text-muted: #6B7280
 ```
+
+## Typography
+- Font: Switzer Variable (Fontshare CDN)
+- CDN: https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap
+
+## Logo
+- Files: bazz-logo-green.svg, bazz-logo-white.svg, bazz-logo-black.svg
+- Wordmark is "Bazz" (not "Bazzcards") with stylized b icon
+- Use green version on dark backgrounds — no filter needed
 
 ## Key Features
 - Signup modal wizard (3-step)

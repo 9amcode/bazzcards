@@ -7,21 +7,20 @@
   <meta name="description" content="Premium NFC business cards - Black Metal, White PVC, and Gold. Tap to share anywhere.">
   <link rel="canonical" href="https://bazzcards.com/shop.html">
   <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://app.bazzcards.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet">
   <style>
     :root {
-      --brand: #85a700;
-      --brand-light: #96bc00;
-      --brand-dark: #6b8800;
-      --accent: #585858;
-      --dark-bg: #07090F;
-      --dark-card: #0E1117;
+      --brand: #99cc00;
+      --brand-light: #aadd00;
+      --brand-dark: #7aaa00;
+      --accent: #58584c;
+      --dark-bg: #161616;
+      --dark-card: #1e1e1e;
       --dark-border: rgba(255,255,255,0.07);
       --white: #FFFFFF;
-      --off-white: #F8FAFF;
+      --off-white: #faeee1;
       --light-gray: #F1F4F9;
       --text-dark: #0A0E1A;
       --text-muted: #6B7280;
@@ -32,7 +31,7 @@
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Switzer', sans-serif;
       color: var(--text-dark);
       background: var(--white);
       -webkit-font-smoothing: antialiased;
@@ -41,7 +40,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(7,9,15,0.88);
+      background: rgba(22,22,22,0.88);
       backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--dark-border);
     }
@@ -63,7 +62,6 @@
     }
     .nav-logo-img {
       height: 32px;
-      filter: brightness(0) invert(1);
     }
     .nav-logo span { color: #fff; font-weight: 700; font-size: 16px; }
     .nav-links { display: flex; align-items: center; gap: 2px; }
@@ -113,7 +111,7 @@
       transform: translateX(-50%);
       width: 800px;
       height: 600px;
-      background: radial-gradient(circle, rgba(133,167,0,0.13) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(153,204,0,0.13) 0%, transparent 65%);
       pointer-events: none;
     }
     .hero-content { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
@@ -122,8 +120,8 @@
       font-size: 12px; font-weight: 700; color: var(--brand);
       letter-spacing: 1.8px; text-transform: uppercase;
       margin-bottom: 16px;
-      background: rgba(133,167,0,0.1);
-      border: 1px solid rgba(133,167,0,0.22);
+      background: rgba(153,204,0,0.1);
+      border: 1px solid rgba(153,204,0,0.22);
       padding: 6px 14px;
       border-radius: 100px;
     }
@@ -135,7 +133,7 @@
       margin-bottom: 20px;
     }
     .hero h1 .grad {
-      background: linear-gradient(125deg, #96bc00 0%, #b5d400 100%);
+      background: linear-gradient(125deg, #99cc00 0%, #b5e000 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -271,7 +269,7 @@
     .feature-icon {
       width: 64px;
       height: 64px;
-      background: rgba(133,167,0,0.1);
+      background: rgba(153,204,0,0.1);
       border-radius: 16px;
       display: flex;
       align-items: center;
@@ -341,8 +339,7 @@
 <nav class="navbar">
   <div class="nav-inner">
 <a href="/" class="nav-logo">
-      <img src="bazzcards-logo.png" alt="Bazzcards" class="nav-logo-img">
-      <span>Bazzcards</span>
+      <img src="bazz-logo-green.svg" alt="Bazz" class="nav-logo-img">
     </a>
     <div class="nav-links">
       <a href="/shop.html" class="active">NFC Cards</a>
@@ -446,21 +443,21 @@
     <div class="features-grid">
       <div class="feature-item">
         <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#85a700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#99cc00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
         </div>
         <h4 class="feature-title">Tap to Share</h4>
         <p class="feature-desc">Just tap your card to any phone. The recipient sees your full profile instantly.</p>
       </div>
       <div class="feature-item">
         <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#85a700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#99cc00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h4 class="feature-title">30-Day Guarantee</h4>
         <p class="feature-desc">Not satisfied? Get a full refund within 30 days, no questions asked.</p>
       </div>
       <div class="feature-item">
         <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#85a700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#99cc00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
         </div>
         <h4 class="feature-title">Fast Delivery</h4>
         <p class="feature-desc">Orders processed within 3-5 business days. Delivered across Uganda.</p>

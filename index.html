@@ -29,11 +29,10 @@
   <meta name="twitter:image" content="https://bazzcards.com/images/1profile-card-pvc-1536x1536.webp">
 
   <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://app.bazzcards.com">
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap"></noscript>
 
   <!-- Schema.org structured data -->
   <script type="application/ld+json">
@@ -155,15 +154,15 @@
   </script>
   <style>
     :root {
-      --brand:        #85a700;
-      --brand-light:  #96bc00;
-      --brand-dark:   #6b8800;
-      --accent:       #585858;
-      --dark-bg:      #07090F;
-      --dark-card:    #0E1117;
+      --brand:        #99cc00;
+      --brand-light:  #aadd00;
+      --brand-dark:   #7aaa00;
+      --accent:       #58584c;
+      --dark-bg:      #161616;
+      --dark-card:    #1e1e1e;
       --dark-border:  rgba(255,255,255,0.07);
       --white:        #FFFFFF;
-      --off-white:    #F8FAFF;
+      --off-white:    #f8f8f8;
       --light-gray:   #F1F4F9;
       --text-dark:    #0A0E1A;
       --text-muted:   #6B7280;
@@ -172,8 +171,8 @@
       --shadow-lg:    0 16px 48px rgba(0,0,0,0.11);
       --radius:       16px;
       --radius-sm:    10px;
-      --font-head:    'Inter', sans-serif;
-      --font-body:    'Inter', sans-serif;
+      --font-head:    'Switzer', sans-serif;
+      --font-body:    'Switzer', sans-serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -191,7 +190,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(7,9,15,0.88);
+      background: rgba(22,22,22,0.88);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--dark-border);
@@ -216,7 +215,6 @@
       height: 32px;
       width: auto;
       display: block;
-      filter: brightness(0) invert(1);
     }
     .nav-links {
       display: flex;
@@ -269,14 +267,14 @@
       position: absolute;
       top: -200px; left: -200px;
       width: 700px; height: 700px;
-      background: radial-gradient(circle, rgba(133,167,0,0.13) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(153,204,0,0.04) 0%, transparent 60%);
       pointer-events: none;
     }
     .hero-glow-right {
       position: absolute;
       bottom: -200px; right: -100px;
       width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(133,167,0,0.07) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(153,204,0,0.03) 0%, transparent 60%);
       pointer-events: none;
     }
     .hero-grid-bg {
@@ -305,18 +303,18 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(133,167,0,0.1);
-      border: 1px solid rgba(133,167,0,0.22);
+      background: rgba(153,204,0,0.1);
+      border: 1px solid rgba(153,204,0,0.22);
       border-radius: 100px;
       padding: 5px 14px 5px 10px;
       font-size: 12.5px;
       font-weight: 600;
-      color: #85a700;
+      color: #99cc00;
       margin-bottom: 26px;
     }
     .eyebrow-dot {
       width: 7px; height: 7px;
-      background: #85a700;
+      background: #99cc00;
       border-radius: 50%;
       animation: pulse-dot 2s ease-in-out infinite;
     }
@@ -334,7 +332,7 @@
       margin-bottom: 22px;
     }
     .hero-h1 .grad {
-      background: linear-gradient(125deg, #96bc00 0%, #b5d400 100%);
+      background: linear-gradient(125deg, #99cc00 0%, #b5e000 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -401,7 +399,7 @@
     .phone-wrap { position: relative; width: 480px; }
     .phone-outer {
       width: 270px;
-      background: #111520;
+      background: #1a1a1a;
       border-radius: 42px;
       border: 1.5px solid rgba(255,255,255,0.09);
       padding: 12px;
@@ -416,13 +414,13 @@
     }
     .phone-notch {
       width: 76px; height: 26px;
-      background: #090C14;
+      background: #111111;
       border-radius: 20px;
       margin: 0 auto 10px;
     }
     .phone-screen { background: #fff; border-radius: 30px; overflow: hidden; }
     .card-hd {
-      background: linear-gradient(140deg, #6b8800 0%, #85a700 55%, #96bc00 100%);
+      background: linear-gradient(140deg, #7aaa00 0%, #99cc00 55%, #aadd00 100%);
       padding: 26px 18px 36px;
       text-align: center;
     }
@@ -500,7 +498,7 @@
       font-size: 13px; flex-shrink: 0;
     }
     .fn-ic-g { background: #D1FAE5; color: #059669; }
-    .fn-ic-b { background: #f0f4d4; color: #85a700; }
+    .fn-ic-b { background: #eef5c0; color: #99cc00; }
     .fn-ttl { font-size: 11.5px; font-weight: 700; color: #111; }
     .fn-sub { font-size: 10.5px; color: #6B7280; }
 
@@ -570,7 +568,7 @@
     /* Step mockup internals */
     .mini-card { width: 100%; max-width: 270px; }
     .mini-card-hd {
-      background: linear-gradient(135deg, #85a700, #96bc00);
+      background: linear-gradient(135deg, #99cc00, #aadd00);
       border-radius: 10px;
       padding: 18px;
       text-align: center;
@@ -971,7 +969,6 @@
       height: 28px;
       width: auto;
       display: block;
-      filter: brightness(0) invert(1);
     }
     .ft-tag { font-size: 13px; color: rgba(255,255,255,.38); line-height: 1.6; margin-bottom: 20px; }
     .ft-social { display: flex; gap: 8px; margin-top: 24px; }
@@ -1608,7 +1605,7 @@
 <nav class="navbar">
   <div class="nav-inner">
     <a href="/" class="nav-logo">
-      <img src="bazzcards-logo.png" alt="Bazzcards" class="nav-logo-img">
+      <img src="bazz-logo-green.svg" alt="Bazz" class="nav-logo-img">
     </a>
     <div class="nav-links">
       <a href="#how-it-works">How It Works</a>
@@ -1680,7 +1677,7 @@
           </div>
         </div>
         <div class="fn fn-2">
-          <div class="fn-ic fn-ic-b"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#85a700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;display:block"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <div class="fn-ic fn-ic-b"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#99cc00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;display:block"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
           <div>
             <div class="fn-ttl">Card Viewed</div>
             <div class="fn-sub">12 views today</div>
@@ -1927,7 +1924,7 @@
 <section class="section why-section">
   <div class="sec-inner">
     <div class="tc">
-      <div class="sec-label" style="color:#96bc00">Why businesses switch</div>
+      <div class="sec-label" style="color:#99cc00">Why businesses switch</div>
       <h2 class="sec-title">Why businesses switch to<br>Bazzcards</h2>
       <p class="sec-sub">A modern but simple approach to digital business cards for growing teams.</p>
     </div>
@@ -2075,7 +2072,7 @@
 
       <div class="ft-brand">
         <a href="/" class="ft-logo">
-          <img src="bazzcards-logo.png" alt="Bazzcards" class="ft-logo-img">
+          <img src="bazz-logo-green.svg" alt="Bazz" class="ft-logo-img">
         </a>
         <p class="ft-tag">Uganda's leading digital business card platform — built for East Africa.</p>
         <div class="ft-social">
