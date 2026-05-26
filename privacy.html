@@ -30,11 +30,12 @@
     .navbar {
       background: rgba(22,22,22,0.88);
       backdrop-filter: blur(20px);
-      padding: 0 24px;
+      padding: 0 32px;
       height: 64px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 24px;
       position: sticky;
       top: 0;
       z-index: 100;
@@ -42,7 +43,15 @@
     }
     .nav-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
     .nav-logo img { height: 32px; }
-    .nav-logo span { color: #fff; font-weight: 700; font-size: 16px; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a { color: rgba(255,255,255,.65); font-size: 14px; text-decoration: none; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: #fff; }
+    .nav-cta { display: flex; gap: 10px; align-items: center; }
+    .btn-ghost-sm { color: rgba(255,255,255,.7); font-size: 14px; font-weight: 600; text-decoration: none; padding: 8px 16px; border: 1px solid rgba(255,255,255,.15); border-radius: 8px; transition: all .2s; }
+    .btn-ghost-sm:hover { color: #fff; border-color: rgba(255,255,255,.4); }
+    .btn-brand-sm { background: var(--brand); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; padding: 9px 20px; border-radius: 8px; transition: all .2s; }
+    .btn-brand-sm:hover { background: var(--brand-light); }
+    @media (max-width: 720px) { .nav-links, .nav-cta .btn-ghost-sm { display: none; } .navbar { padding: 0 16px; } }
     .container { max-width: 720px; margin: 0 auto; padding: 64px 24px 96px; }
     .page-header { margin-bottom: 48px; }
     .page-label { font-size: 12px; font-weight: 700; color: var(--brand); letter-spacing: 1.8px; text-transform: uppercase; margin-bottom: 12px; }
@@ -65,7 +74,7 @@
     .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; }
     .ft-brand { padding-right: 32px; }
     .ft-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 14px; }
-    .ft-logo-img { height: 28px; }
+    .ft-logo-img { height: 44px; }
     .ft-tag { font-size: 13px; color: rgba(255,255,255,.38); line-height: 1.6; margin-bottom: 20px; }
     .ft-social { display: flex; gap: 8px; margin-top: 24px; }
     .soc-link { width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; font-size: 13px; text-decoration: none; color: rgba(255,255,255,.6); transition: all .2s; }
@@ -89,8 +98,16 @@
 <nav class="navbar">
   <a href="/" class="nav-logo">
     <img src="bazz-logo-green.svg" alt="Bazzcards">
-    <span>Bazzcards</span>
   </a>
+  <div class="nav-links">
+    <a href="/#how-it-works">How It Works</a>
+    <a href="/shop">Shop</a>
+    <a href="/corporate">For Businesses</a>
+  </div>
+  <div class="nav-cta">
+    <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
+    <a href="/shop" class="btn-brand-sm">Get Started</a>
+  </div>
 </nav>
 
 <div class="container">
@@ -188,7 +205,7 @@
         <a href="/" class="ft-logo">
           <img src="bazz-logo-green.svg" alt="Bazzcards" class="ft-logo-img">
         </a>
-        <p class="ft-tag">Uganda's leading digital business card platform — built for East Africa.</p>
+        <p class="ft-tag">One Tap. Endless Possibilities.</p>
         <div class="ft-social">
           <a href="https://www.instagram.com/bazzcards" class="soc-link" title="Instagram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
           <a href="https://www.tiktok.com/@bazzcards" class="soc-link" title="TikTok" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.74a4.85 4.85 0 0 1-1.01-.05z"/></svg></a>
@@ -200,16 +217,18 @@
       <div>
         <div class="ft-col-ttl">Platform</div>
         <ul class="ft-links">
+          <li><a href="/#how-it-works">How It Works</a></li>
+          <li><a href="/shop">Shop NFC Cards</a></li>
+          <li><a href="/corporate">For Businesses</a></li>
           <li><a href="https://app.bazzcards.com/">Sign In</a></li>
-          <li><a href="/shop.html">Shop NFC Cards</a></li>
         </ul>
       </div>
 
       <div>
-        <div class="ft-col-ttl">Resources</div>
+        <div class="ft-col-ttl">Legal</div>
         <ul class="ft-links">
-          <li><a href="/#customers">Customers</a></li>
-          <li><a href="/#how-it-works">How It Works</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms &amp; Conditions</a></li>
         </ul>
       </div>
 
@@ -223,10 +242,10 @@
 
     </div>
     <div class="footer-btm">
-      <div class="ft-copy">&copy; 2026 BAZZCARDS. Based in Uganda</div>
+      <div class="ft-copy">&copy; 2026 Bazzcards</div>
       <div class="ft-legal">
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms &amp; Conditions</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms &amp; Conditions</a>
       </div>
     </div>
   </div>
