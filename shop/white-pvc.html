@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White PVC NFC Card | Bazzcards</title>
+  <meta name="description" content="The White PVC Bazzcard — fully customisable NFC business card with full-colour printing. Tap to share your profile with any smartphone. UGX 80,000.">
+  <link rel="canonical" href="https://bazzcards.com/shop/white-pvc">
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #99cc00;
+      --brand-light: #aadd00;
+      --dark-bg: #161616;
+      --dark-border: rgba(255,255,255,0.07);
+      --white: #FFFFFF;
+      --off-white: #faeee1;
+      --light-gray: #F1F4F9;
+      --text-dark: #0A0E1A;
+      --text-muted: #6B7280;
+      --border: #E5E8EF;
+      --shadow-lg: 0 16px 48px rgba(0,0,0,0.11);
+      --radius: 16px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Switzer', sans-serif; color: var(--text-dark); background: var(--white); -webkit-font-smoothing: antialiased; }
+
+    /* ── Nav ── */
+    .navbar { position: sticky; top: 0; z-index: 100; background: rgba(22,22,22,0.88); backdrop-filter: blur(20px); border-bottom: 1px solid var(--dark-border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .nav-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
+    .nav-logo-img { height: 32px; }
+    .nav-links { display: flex; align-items: center; gap: 2px; }
+    .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: 8px; transition: all .2s; }
+    .nav-links a:hover, .nav-links a.active { color: #fff; background: rgba(255,255,255,0.06); }
+    .nav-ctas { display: flex; align-items: center; gap: 8px; }
+    .btn-ghost-sm { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.13); transition: all .2s; }
+    .btn-ghost-sm:hover { background: rgba(255,255,255,0.07); color: #fff; }
+    .btn-primary-sm { background: var(--brand); color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 8px 18px; border-radius: 8px; transition: all .2s; }
+    .btn-primary-sm:hover { background: var(--brand-light); }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; color: rgba(255,255,255,0.8); }
+    .mobile-nav { display: none; flex-direction: column; gap: 4px; padding: 16px 24px; background: rgba(22,22,22,0.97); border-bottom: 1px solid var(--dark-border); position: sticky; top: 64px; z-index: 99; }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 15px; font-weight: 500; padding: 10px 12px; border-radius: 8px; }
+    .mobile-nav-divider { height: 1px; background: var(--dark-border); margin: 8px 0; }
+    .mobile-nav-ctas { display: flex; gap: 8px; padding: 4px 0; }
+    .mobile-nav-ctas .btn-ghost-sm, .mobile-nav-ctas .btn-primary-sm { flex: 1; text-align: center; }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb { background: var(--light-gray); padding: 14px 24px; font-size: 13px; color: var(--text-muted); }
+    .breadcrumb-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 8px; }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; transition: color .2s; }
+    .breadcrumb a:hover { color: var(--text-dark); }
+    .breadcrumb-sep { color: #ccc; }
+    .breadcrumb-current { color: var(--text-dark); font-weight: 500; }
+
+    /* ── Product hero ── */
+    .product-hero { padding: 64px 24px; background: var(--white); }
+    .product-hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .product-images { position: sticky; top: 88px; }
+    .main-img-wrap { border-radius: var(--radius); overflow: hidden; background: var(--light-gray); aspect-ratio: 4/3; margin-bottom: 12px; }
+    .main-img { width: 100%; height: 100%; object-fit: cover; }
+    .thumb-row { display: flex; gap: 10px; }
+    .thumb { width: 80px; height: 60px; border-radius: 10px; overflow: hidden; background: var(--light-gray); cursor: pointer; border: 2px solid transparent; transition: border-color .2s; flex-shrink: 0; }
+    .thumb.active { border-color: var(--brand); }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* ── Buy panel ── */
+    .product-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; color: var(--brand); letter-spacing: 1.5px; text-transform: uppercase; background: rgba(153,204,0,0.1); border: 1px solid rgba(153,204,0,0.22); padding: 5px 12px; border-radius: 100px; margin-bottom: 16px; }
+    .product-title { font-size: clamp(28px, 4vw, 40px); font-weight: 800; color: var(--text-dark); letter-spacing: -1.5px; margin-bottom: 12px; line-height: 1.1; }
+    .product-subtitle { font-size: 16px; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; }
+    .price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 28px; }
+    .price-big { font-size: 36px; font-weight: 800; color: var(--text-dark); }
+    .price-per { font-size: 14px; color: var(--text-muted); }
+    .spec-list { list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; }
+    .spec-item { display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--text-dark); }
+    .spec-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(153,204,0,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .spec-icon svg { width: 18px; height: 18px; }
+    .btn-order { display: block; width: 100%; background: var(--brand); color: #fff; border: none; border-radius: 12px; padding: 18px 24px; font-size: 17px; font-weight: 700; cursor: pointer; transition: all .2s; font-family: inherit; margin-bottom: 12px; }
+    .btn-order:hover { background: var(--brand-light); transform: translateY(-2px); }
+    .btn-team { display: block; width: 100%; background: transparent; color: var(--text-muted); border: 1.5px solid var(--border); border-radius: 12px; padding: 14px 24px; font-size: 15px; font-weight: 600; text-align: center; text-decoration: none; transition: all .2s; }
+    .btn-team:hover { border-color: var(--text-dark); color: var(--text-dark); }
+    .guarantee-note { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-muted); margin-top: 16px; }
+    .guarantee-note svg { color: var(--brand); flex-shrink: 0; }
+
+    /* ── Specs strip ── */
+    .specs-section { padding: 64px 24px; background: var(--off-white); }
+    .specs-inner { max-width: 1100px; margin: 0 auto; }
+    .specs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .spec-card { background: #fff; border-radius: var(--radius); border: 1px solid var(--border); padding: 28px 24px; text-align: center; }
+    .spec-card-label { font-size: 11px; font-weight: 700; color: var(--text-muted); letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 8px; }
+    .spec-card-value { font-size: 18px; font-weight: 700; color: var(--text-dark); }
+
+    /* ── Why this card ── */
+    .why-section { padding: 64px 24px; background: #fff; }
+    .why-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .why-text h2 { font-size: clamp(26px, 3.5vw, 36px); font-weight: 800; color: var(--text-dark); letter-spacing: -1.2px; margin-bottom: 20px; }
+    .why-text p { font-size: 16px; color: var(--text-muted); line-height: 1.75; margin-bottom: 16px; }
+    .why-img-wrap { border-radius: var(--radius); overflow: hidden; aspect-ratio: 1; }
+    .why-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* ── Related ── */
+    .related-section { padding: 64px 24px; background: var(--off-white); }
+    .related-inner { max-width: 1100px; margin: 0 auto; }
+    .related-inner h2 { font-size: 28px; font-weight: 800; color: var(--text-dark); letter-spacing: -1px; margin-bottom: 32px; }
+    .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .related-card { background: #fff; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; display: flex; transition: all .25s; text-decoration: none; color: inherit; }
+    .related-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+    .related-img { width: 120px; height: 100px; object-fit: cover; flex-shrink: 0; }
+    .related-info { padding: 20px; display: flex; flex-direction: column; justify-content: center; }
+    .related-name { font-size: 16px; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
+    .related-price { font-size: 14px; color: var(--text-muted); margin-bottom: 8px; }
+    .related-link { font-size: 13px; font-weight: 600; color: var(--brand); }
+
+    /* ── Footer ── */
+    .footer { background: var(--dark-bg); padding: 64px 24px 24px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
+    .ft-logo { text-decoration: none; }
+    .ft-logo-img { height: 32px; }
+    .ft-tag { font-size: 14px; color: rgba(255,255,255,0.45); margin-top: 12px; line-height: 1.5; }
+    .ft-social { display: flex; gap: 10px; margin-top: 20px; }
+    .soc-link { width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); text-decoration: none; transition: all .2s; }
+    .soc-link:hover { background: rgba(153,204,0,0.12); color: var(--brand); border-color: rgba(153,204,0,0.25); }
+    .ft-col-ttl { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.35); letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 16px; }
+    .ft-links { list-style: none; }
+    .ft-links li { margin-bottom: 10px; }
+    .ft-links a { font-size: 14px; color: rgba(255,255,255,0.55); text-decoration: none; transition: color .2s; }
+    .ft-links a:hover { color: #fff; }
+    .footer-btm { display: flex; align-items: center; justify-content: space-between; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.055); }
+    .ft-copy { font-size: 13px; color: rgba(255,255,255,.32); }
+    .ft-legal { display: flex; gap: 24px; }
+    .ft-legal a { font-size: 13px; color: rgba(255,255,255,.42); text-decoration: none; transition: color .2s; }
+    .ft-legal a:hover { color: rgba(255,255,255,.75); }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      .product-hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .product-images { position: static; }
+      .why-inner { grid-template-columns: 1fr; }
+      .why-img-wrap { order: -1; }
+      .specs-grid { grid-template-columns: repeat(2, 1fr); }
+      .related-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .nav-links, .nav-ctas { display: none; }
+      .nav-hamburger { display: flex; }
+    }
+    @media (max-width: 480px) {
+      .footer-top { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="../bazz-logo-green.svg" alt="Bazz" class="nav-logo-img">
+    </a>
+    <div class="nav-links">
+      <a href="/#how-it-works">How It Works</a>
+      <a href="/shop" class="active">Shop</a>
+      <a href="/corporate">For Teams</a>
+    </div>
+    <div class="nav-ctas">
+      <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
+      <a href="/shop" class="btn-primary-sm">Get Started</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" onclick="toggleMobileNav()">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="/#how-it-works">How It Works</a>
+  <a href="/shop">Shop</a>
+  <a href="/corporate">For Businesses</a>
+  <div class="mobile-nav-divider"></div>
+  <div class="mobile-nav-ctas">
+    <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
+    <a href="/shop" class="btn-primary-sm">Get Started</a>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/shop">Shop</a>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-current">White PVC</span>
+  </div>
+</div>
+
+<section class="product-hero">
+  <div class="product-hero-inner">
+
+    <div class="product-images">
+      <div class="main-img-wrap">
+        <img src="../images/product_pvc-white.webp" alt="White PVC NFC Card" class="main-img" id="mainImg" width="600" height="450">
+      </div>
+      <div class="thumb-row">
+        <div class="thumb active" onclick="switchImg(this, '../images/product_pvc-white.webp')">
+          <img src="../images/product_pvc-white.webp" alt="White PVC front">
+        </div>
+        <div class="thumb" onclick="switchImg(this, '../images/1profile-card-pvc-1536x1536.webp')">
+          <img src="../images/1profile-card-pvc-1536x1536.webp" alt="PVC profile card">
+        </div>
+        <div class="thumb" onclick="switchImg(this, '../images/1sharing-pvc-1536x1536.webp')">
+          <img src="../images/1sharing-pvc-1536x1536.webp" alt="Sharing PVC card">
+        </div>
+      </div>
+    </div>
+
+    <div class="buy-panel">
+      <div class="product-tag">Custom Printed</div>
+      <h1 class="product-title">White PVC</h1>
+      <p class="product-subtitle">Your brand, on your card. The White PVC lets you print your logo, colours, and design in full colour — so every tap is a brand moment, not just a contact exchange.</p>
+
+      <div class="price-row">
+        <span class="price-big">UGX 80,000</span>
+        <span class="price-per">per card</span>
+      </div>
+
+      <ul class="spec-list">
+        <li class="spec-item">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#99cc00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h5"/></svg>
+          </div>
+          Full-colour custom printing included
+        </li>
+        <li class="spec-item">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#99cc00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          </div>
+          Tap to share — works with any smartphone
+        </li>
+        <li class="spec-item">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#99cc00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          No app required on either side
+        </li>
+        <li class="spec-item">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#99cc00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          1-year warranty included
+        </li>
+        <li class="spec-item">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#99cc00" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          Ships within 3–5 business days
+        </li>
+      </ul>
+
+      <button class="btn-order" onclick="orderCard('White PVC', 80000)">Order Now — UGX 80,000</button>
+      <a href="/corporate" class="btn-team">Ordering for a team? See bulk pricing &rarr;</a>
+
+      <p class="guarantee-note">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        30-day satisfaction guarantee — full refund if you're not happy
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Specs strip -->
+<section class="specs-section">
+  <div class="specs-inner">
+    <div class="specs-grid">
+      <div class="spec-card">
+        <div class="spec-card-label">Material</div>
+        <div class="spec-card-value">Premium PVC</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-card-label">Printing</div>
+        <div class="spec-card-value">Full Colour</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-card-label">Warranty</div>
+        <div class="spec-card-value">1 Year</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-card-label">Delivery</div>
+        <div class="spec-card-value">3–5 Days</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why this card -->
+<section class="why-section">
+  <div class="why-inner">
+    <div class="why-text">
+      <h2>Your brand deserves its own card</h2>
+      <p>The White PVC is the card for people who want their identity on every surface — not just their digital profile. Submit your logo and brand colours, and we'll print your design in full colour on the front of your card.</p>
+      <p>Every time you tap, your recipient sees your branded profile page — consistent, professional, and completely on-brand from the physical card to the screen.</p>
+      <p>Popular with marketing professionals, agencies, and anyone building a brand alongside their career.</p>
+    </div>
+    <div class="why-img-wrap">
+      <img src="../images/1sharing-pvc-1536x1536.webp" alt="Sharing the White PVC Bazzcard" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Related products -->
+<section class="related-section">
+  <div class="related-inner">
+    <h2>Also in the shop</h2>
+    <div class="related-grid">
+      <a href="/shop/black-metal" class="related-card">
+        <img src="../images/product_black-metal-steel.webp" alt="Black Metal Steel NFC Card" class="related-img" loading="lazy">
+        <div class="related-info">
+          <div class="related-name">Black Metal Steel</div>
+          <div class="related-price">UGX 80,000</div>
+          <div class="related-link">View details &rarr;</div>
+        </div>
+      </a>
+      <a href="/shop/gold-metal" class="related-card">
+        <img src="../images/gold card.jpeg" alt="Gold Metal NFC Card" class="related-img" loading="lazy">
+        <div class="related-info">
+          <div class="related-name">Gold Metal</div>
+          <div class="related-price">UGX 500,000</div>
+          <div class="related-link">View details &rarr;</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="ft-brand">
+        <a href="/" class="ft-logo"><img src="../bazz-logo-green.svg" alt="Bazz" class="ft-logo-img"></a>
+        <p class="ft-tag">One Tap. Endless Possibilities.</p>
+        <div class="ft-social">
+          <a href="https://www.instagram.com/bazzcards" class="soc-link" title="Instagram" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@bazzcards" class="soc-link" title="TikTok" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.74a4.85 4.85 0 0 1-1.01-.05z"/></svg>
+          </a>
+          <a href="https://x.com/bazzcardz" class="soc-link" title="X" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/bazzcards/" class="soc-link" title="LinkedIn" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-ttl">Platform</div>
+        <ul class="ft-links">
+          <li><a href="/#how-it-works">How It Works</a></li>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="/corporate">For Teams</a></li>
+          <li><a href="https://app.bazzcards.com/">Sign In</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-ttl">Company</div>
+        <ul class="ft-links">
+          <li><a href="/#customers">About</a></li>
+          <li><a href="/#customers">Testimonials</a></li>
+          <li><a href="/partners">Partner Programme</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-ttl">Contact</div>
+        <ul class="ft-links">
+          <li><a href="mailto:support@bazzcards.com">support@bazzcards.com</a></li>
+          <li><a href="tel:+256753330197">+256 753 330 197</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-btm">
+      <div class="ft-copy">&copy; 2026 Bazzcards</div>
+      <div class="ft-legal">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function orderCard(type, price) {
+  window.location.href = `https://app.bazzcards.com/checkout?product=${encodeURIComponent(type)}&price=${price}`;
+}
+function switchImg(thumb, src) {
+  document.getElementById('mainImg').src = src;
+  document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+  thumb.classList.add('active');
+}
+function toggleMobileNav() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
