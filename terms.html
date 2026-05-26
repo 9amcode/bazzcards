@@ -3,81 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms & Conditions | Bazzcards</title>
+  <title>Terms &amp; Conditions | Bazzcards</title>
   <meta name="description" content="Bazzcards Terms & Conditions - The terms governing your use of Bazzcards services.">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://api.fontshare.com">
-  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap"></noscript>
   <style>
     :root {
-      --brand: #99cc00;
+      --brand:       #99cc00;
       --brand-light: #aadd00;
-      --text-dark: #0A0E1A;
-      --text-muted: #6B7280;
-      --border: #E5E8EF;
-      --dark-bg: #161616;
-      --dark-card: #1e1e1e;
+      --dark-bg:     #161616;
       --dark-border: rgba(255,255,255,0.07);
+      --text-dark:   #0A0E1A;
+      --text-muted:  #6B7280;
+      --border:      #E5E8EF;
+      --font:        'Switzer', sans-serif;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Switzer', sans-serif;
-      color: var(--text-dark);
-      background: #fff;
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .navbar {
-      background: rgba(22,22,22,0.88);
-      backdrop-filter: blur(20px);
-      padding: 0 32px;
-      height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      border-bottom: 1px solid var(--dark-border);
-    }
-    .nav-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
-    .nav-logo img { height: 32px; }
-    .nav-links { display: flex; gap: 28px; }
-    .nav-links a { color: rgba(255,255,255,.65); font-size: 14px; text-decoration: none; font-weight: 500; transition: color .2s; }
-    .nav-links a:hover { color: #fff; }
-    .nav-cta { display: flex; gap: 10px; align-items: center; }
-    .btn-ghost-sm { color: rgba(255,255,255,.7); font-size: 14px; font-weight: 600; text-decoration: none; padding: 8px 16px; border: 1px solid rgba(255,255,255,.15); border-radius: 8px; transition: all .2s; }
-    .btn-ghost-sm:hover { color: #fff; border-color: rgba(255,255,255,.4); }
-    .btn-brand-sm { background: var(--brand); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; padding: 9px 20px; border-radius: 8px; transition: all .2s; }
-    .btn-brand-sm:hover { background: var(--brand-light); }
-    @media (max-width: 720px) { .nav-links, .nav-cta .btn-ghost-sm { display: none; } .navbar { padding: 0 16px; } }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); color: var(--text-dark); background: #fff; -webkit-font-smoothing: antialiased; }
+
+    /* ── NAVBAR ── */
+    .navbar { position: sticky; top: 0; z-index: 100; background: rgba(22,22,22,0.88); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--dark-border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; gap: 32px; }
+    .nav-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; flex-shrink: 0; }
+    .nav-logo-img { height: 32px; width: auto; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 2px; flex: 1; }
+    .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: 8px; transition: all .2s; }
+    .nav-links a:hover { color: #fff; background: rgba(255,255,255,0.06); }
+    .nav-ctas { display: flex; align-items: center; gap: 8px; }
+    .btn-ghost-sm { color: rgba(255,255,255,.75); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(255,255,255,.13); transition: all .2s; }
+    .btn-ghost-sm:hover { background: rgba(255,255,255,.07); color: #fff; }
+    .btn-primary-sm { background: var(--brand); color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 8px 18px; border-radius: 8px; transition: all .2s; }
+    .btn-primary-sm:hover { background: var(--brand-light); transform: translateY(-1px); }
+
+    /* ── HAMBURGER ── */
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; margin-left: auto; flex-direction: column; gap: 5px; min-width: 44px; min-height: 44px; align-items: center; justify-content: center; touch-action: manipulation; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: rgba(255,255,255,0.85); border-radius: 2px; transition: all .25s ease; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ── MOBILE NAV ── */
+    .mobile-nav { display: none; position: fixed; top: 64px; left: 0; right: 0; background: rgba(7,9,15,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--dark-border); z-index: 99; padding: 12px 0 20px; flex-direction: column; }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 16px; font-weight: 500; padding: 14px 24px; display: flex; align-items: center; min-height: 44px; transition: color .2s; touch-action: manipulation; }
+    .mobile-nav a:hover { color: #fff; background: rgba(255,255,255,0.04); }
+    .mobile-nav-divider { height: 1px; background: var(--dark-border); margin: 8px 24px; }
+    .mobile-nav-ctas { display: flex; flex-direction: column; gap: 10px; padding: 12px 24px 4px; }
+    .mobile-nav .btn-ghost-sm, .mobile-nav .btn-primary-sm { text-align: center; padding: 13px 20px; min-height: 44px; font-size: 15px; border-radius: 10px; justify-content: center; }
+
+    /* ── PAGE CONTENT ── */
     .container { max-width: 720px; margin: 0 auto; padding: 64px 24px 96px; }
     .page-header { margin-bottom: 48px; }
     .page-label { font-size: 12px; font-weight: 700; color: var(--brand); letter-spacing: 1.8px; text-transform: uppercase; margin-bottom: 12px; }
-    h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -1.5px; color: var(--text-dark); margin-bottom: 16px; }
+    h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -1.5px; color: var(--text-dark); margin-bottom: 16px; line-height: 1.1; }
     .page-meta { font-size: 14px; color: var(--text-muted); }
     h2 { font-size: 20px; font-weight: 700; color: var(--text-dark); margin: 36px 0 12px; letter-spacing: -0.5px; }
     h3 { font-size: 16px; font-weight: 600; color: var(--text-dark); margin: 24px 0 8px; }
-    p { font-size: 15px; color: var(--text-muted); margin-bottom: 16px; }
+    p { font-size: 15px; color: var(--text-muted); line-height: 1.72; margin-bottom: 16px; }
     ul { margin: 0 0 16px 20px; }
-    li { font-size: 15px; color: var(--text-muted); margin-bottom: 8px; }
-    a { color: var(--brand); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    li { font-size: 15px; color: var(--text-muted); line-height: 1.7; margin-bottom: 8px; }
+    .container a { color: var(--brand); text-decoration: none; }
+    .container a:hover { text-decoration: underline; }
     .contact-card { background: #F8FAFF; border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-top: 48px; }
     .contact-card h3 { margin-top: 0; }
     .contact-card p { margin-bottom: 8px; }
-    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--brand); font-weight: 600; margin-bottom: 32px; }
-    
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--brand); font-weight: 600; margin-bottom: 32px; font-size: 14px; }
+
+    /* ── FOOTER ── */
     .footer { background: var(--dark-bg); padding: 72px 24px 32px; }
     .footer-inner { max-width: 1200px; margin: 0 auto; }
-    .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; }
+    .footer-top { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
     .ft-brand { padding-right: 32px; }
     .ft-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; margin-bottom: 14px; }
-    .ft-logo-img { height: 44px; }
+    .ft-logo-img { height: 44px; width: auto; display: block; }
     .ft-tag { font-size: 13px; color: rgba(255,255,255,.38); line-height: 1.6; margin-bottom: 20px; }
     .ft-social { display: flex; gap: 8px; margin-top: 24px; }
-    .soc-link { width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; font-size: 13px; text-decoration: none; color: rgba(255,255,255,.6); transition: all .2s; }
+    .soc-link { width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; text-decoration: none; color: rgba(255,255,255,.6); transition: all .2s; }
     .soc-link:hover { background: var(--brand); color: #fff; border-color: var(--brand); transform: translateY(-2px); }
     .ft-col-ttl { font-size: 12px; font-weight: 700; color: rgba(255,255,255,.92); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 20px; }
     .ft-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
@@ -88,38 +92,65 @@
     .ft-legal { display: flex; gap: 28px; }
     .ft-legal a { font-size: 13px; color: rgba(255,255,255,.35); text-decoration: none; transition: color .2s; }
     .ft-legal a:hover { color: #fff; }
-    
-    @media (max-width: 768px) { .footer-top { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 480px) { .footer-top { grid-template-columns: 1fr; } .footer-btm { flex-direction: column; gap: 16px; text-align: center; } }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-ctas { display: none; }
+      .nav-hamburger { display: flex; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-btm { flex-direction: column; gap: 14px; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      .footer-btm { flex-direction: column; gap: 10px; text-align: center; }
+      .ft-legal { flex-direction: column; gap: 10px; align-items: center; }
+    }
   </style>
 </head>
 <body>
 
 <nav class="navbar">
-  <a href="/" class="nav-logo">
-    <img src="bazz-logo-green.svg" alt="Bazzcards">
-  </a>
-  <div class="nav-links">
-    <a href="/#how-it-works">How It Works</a>
-    <a href="/shop">Shop</a>
-    <a href="/corporate">For Businesses</a>
-  </div>
-  <div class="nav-cta">
-    <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
-    <a href="/shop" class="btn-brand-sm">Get Started</a>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="bazz-logo-green.svg" alt="Bazz" class="nav-logo-img">
+    </a>
+    <div class="nav-links">
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="shop.html">Shop</a>
+      <a href="corporate.html">For Teams</a>
+    </div>
+    <div class="nav-ctas">
+      <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
+      <a href="corporate.html" class="btn-primary-sm">Get Started</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html#how-it-works">How It Works</a>
+  <a href="shop.html">Shop</a>
+  <a href="corporate.html">For Teams</a>
+  <div class="mobile-nav-divider"></div>
+  <div class="mobile-nav-ctas">
+    <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
+    <a href="corporate.html" class="btn-primary-sm">Get Started</a>
+  </div>
+</div>
+
 <div class="container">
-  <a href="/" class="back-link">← Back to Bazzcards</a>
-  
+  <a href="index.html" class="back-link">← Back to Bazzcards</a>
+
   <div class="page-header">
     <div class="page-label">Legal</div>
-    <h1>Terms & Conditions</h1>
+    <h1>Terms &amp; Conditions</h1>
     <p class="page-meta">Last updated: April 28, 2026</p>
   </div>
 
-  <p>Welcome to Bazzcards. These Terms & Conditions ("Terms") govern your access to and use of Bazzcards services, including our website, mobile app, and NFC business card products. By using our services, you agree to these Terms.</p>
+  <p>Welcome to Bazzcards. These Terms &amp; Conditions ("Terms") govern your access to and use of Bazzcards services, including our website, mobile app, and NFC business card products. By using our services, you agree to these Terms.</p>
 
   <h2>Acceptance of Terms</h2>
   <p>By creating an account or using any Bazzcards service, you confirm that you are at least 16 years old and agree to be bound by these Terms. If you do not agree to these Terms, you may not use our services.</p>
@@ -161,19 +192,19 @@
   <h2>Subscription and Billing</h2>
   <h3>Personal Plan</h3>
   <p>Our Personal plan is free to use with basic features. We reserve the right to modify or discontinue features at any time.</p>
-  
+
   <h3>Teams Plan</h3>
   <p>Teams plans are billed per user per month. Billing begins on the date you upgrade. By subscribing, you authorize us to charge your payment method on a recurring basis.</p>
-  
+
   <h3>Cancellations</h3>
   <p>You may cancel your subscription at any time. Cancellations take effect at the end of your current billing period. No refunds are provided for partial months.</p>
 
   <h2>NFC Cards</h2>
   <p>Physical NFC cards are sold separately and are subject to additional terms:</p>
   <ul>
-    <li>Prices are listed in USD and are subject to change</li>
+    <li>Prices are listed in UGX and are subject to change</li>
     <li>Shipping costs apply and vary by destination</li>
-    <li>Orders are processed within 3-5 business days</li>
+    <li>Orders are processed within 3&ndash;5 business days</li>
     <li>Delivery times vary by location</li>
     <li>NFC cards include a 30-day satisfaction guarantee</li>
   </ul>
@@ -207,46 +238,47 @@
 
   <h2>Contact Information</h2>
   <p>For questions about these Terms, please contact us:</p>
-  
+
   <div class="contact-card">
     <h3>Bazzcards</h3>
     <p><strong>Email:</strong> <a href="mailto:support@bazzcards.com">support@bazzcards.com</a></p>
     <p><strong>Phone:</strong> +256 753 330 197</p>
     <p><strong>Address:</strong> Plot 16, Upper Naguru Rd, Kampala, Uganda</p>
   </div>
+</div>
 
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-top">
 
       <div class="ft-brand">
-        <a href="/" class="ft-logo">
-          <img src="bazz-logo-green.svg" alt="Bazzcards" class="ft-logo-img">
+        <a href="index.html" class="ft-logo">
+          <img src="bazz-logo-green.svg" alt="Bazz" class="ft-logo-img">
         </a>
         <p class="ft-tag">One Tap. Endless Possibilities.</p>
         <div class="ft-social">
-          <a href="https://www.instagram.com/bazzcards" class="soc-link" title="Instagram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-          <a href="https://www.tiktok.com/@bazzcards" class="soc-link" title="TikTok" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.74a4.85 4.85 0 0 1-1.01-.05z"/></svg></a>
-          <a href="https://x.com/bazzcardz" class="soc-link" title="X" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-          <a href="https://www.linkedin.com/company/bazzcards/" class="soc-link" title="LinkedIn" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://www.instagram.com/bazzcards" class="soc-link" title="Instagram" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@bazzcards" class="soc-link" title="TikTok" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.74a4.85 4.85 0 0 1-1.01-.05z"/></svg>
+          </a>
+          <a href="https://x.com/bazzcardz" class="soc-link" title="X" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/bazzcards/" class="soc-link" title="LinkedIn" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
         </div>
       </div>
 
       <div>
         <div class="ft-col-ttl">Platform</div>
         <ul class="ft-links">
-          <li><a href="/#how-it-works">How It Works</a></li>
-          <li><a href="/shop">Shop NFC Cards</a></li>
-          <li><a href="/corporate">For Businesses</a></li>
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="corporate.html">For Teams</a></li>
           <li><a href="https://app.bazzcards.com/">Sign In</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="ft-col-ttl">Legal</div>
-        <ul class="ft-links">
-          <li><a href="/privacy">Privacy Policy</a></li>
-          <li><a href="/terms">Terms &amp; Conditions</a></li>
         </ul>
       </div>
 
@@ -260,13 +292,27 @@
 
     </div>
     <div class="footer-btm">
-      <div class="ft-copy">&copy; 2026 Bazzcards</div>
+      <div class="ft-copy">&copy; 2026 Bazzcards. Based in Uganda</div>
       <div class="ft-legal">
-        <a href="/privacy">Privacy Policy</a>
-        <a href="/terms">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
       </div>
-</div>
+    </div>
+  </div>
 </footer>
+
+<script>
+  function toggleMobileNav() {
+    document.getElementById('mobileNav').classList.toggle('open');
+    document.getElementById('hamburger').classList.toggle('open');
+  }
+  document.getElementById('mobileNav').querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('open');
+    });
+  });
+</script>
 
 </body>
 </html>
