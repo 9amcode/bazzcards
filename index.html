@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Business Cards with Lead Capture &amp; NFC | Bazzcards</title>
-  <meta name="description" content="Create free digital business cards with NFC, automatic lead capture, and CRM integrations. Trusted by 100+ businesses. Uganda's leading digital card platform.">
+  <title>NFC Business Card System for Teams | Bazzcards Uganda</title>
+  <meta name="description" content="Bazzcards gives every employee a smart NFC business card managed from one dashboard. One tap shares their full profile to any phone. Trusted by businesses across East Africa.">
   <meta name="keywords" content="digital business cards, NFC business cards, lead capture, smart business cards, digital card Uganda, virtual business card, contact sharing">
   <meta name="author" content="Bazzcards">
   <meta name="robots" content="index, follow">
@@ -15,8 +15,8 @@
   <meta property="og:url" content="https://bazzcards.com/">
   <meta property="og:site_name" content="Bazzcards">
   <meta property="og:locale" content="en_UG">
-  <meta property="og:title" content="Digital Business Cards with Lead Capture &amp; NFC | Bazzcards">
-  <meta property="og:description" content="Create free digital business cards with NFC, automatic lead capture, and CRM integrations. Trusted by 100+ businesses. Uganda's leading digital card platform.">
+  <meta property="og:title" content="NFC Business Card System for Teams | Bazzcards Uganda">
+  <meta property="og:description" content="Bazzcards gives every employee a smart NFC business card managed from one dashboard. One tap shares their full profile to any phone. Trusted by businesses across East Africa.">
   <meta property="og:image" content="https://bazzcards.com/images/1profile-card-pvc-1536x1536.webp">
   <meta property="og:image:width" content="1536">
   <meta property="og:image:height" content="1536">
@@ -24,8 +24,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Digital Business Cards with Lead Capture &amp; NFC | Bazzcards">
-  <meta name="twitter:description" content="Create free digital business cards with NFC, automatic lead capture, and CRM integrations. Trusted by 100+ businesses.">
+  <meta name="twitter:title" content="NFC Business Card System for Teams | Bazzcards Uganda">
+  <meta name="twitter:description" content="Bazzcards gives every employee a smart NFC business card managed from one dashboard. One tap shares their full profile to any phone.">
   <meta name="twitter:image" content="https://bazzcards.com/images/1profile-card-pvc-1536x1536.webp">
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -966,7 +966,7 @@
       text-decoration: none; margin-bottom: 14px;
     }
     .ft-logo-img {
-      height: 28px;
+      height: 44px;
       width: auto;
       display: block;
     }
@@ -1158,38 +1158,58 @@
     .field.has-error input,
     .field.has-error select { border-color: #ef4444; }
 
-    /* Plan picker (step 3) */
-    .plan-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .plan-card {
-      border: 2px solid var(--border);
-      border-radius: 12px;
-      padding: 18px 16px;
-      cursor: pointer;
-      transition: all .18s;
-      position: relative;
-      background: #fff;
+    /* Plan summary (step 3) */
+    .plan-summary {
+      border: 2px solid var(--brand);
+      background: #f5fde0;
+      border-radius: 14px;
+      padding: 18px;
     }
-    .plan-card:hover { border-color: var(--brand); background: #fafff0; }
-    .plan-card.selected { border-color: var(--brand); background: #f5fde0; }
-    .plan-card.selected::after {
+    .plan-summary-row { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+    .plan-summary-icon {
+      font-size: 22px;
+      width: 44px; height: 44px;
+      background: #fff;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .plan-summary-info { flex: 1; }
+    .plan-summary-name { font-size: 15px; font-weight: 700; color: var(--text-dark); margin-bottom: 2px; }
+    .plan-summary-desc { font-size: 12px; color: var(--text-muted); line-height: 1.4; }
+    .plan-summary-price { text-align: right; flex-shrink: 0; }
+    .plan-summary-amount { font-size: 18px; font-weight: 800; color: var(--text-dark); letter-spacing: -.3px; }
+    .plan-summary-unit { font-size: 11px; color: var(--text-muted); }
+    .plan-summary-feats { list-style: none; padding: 0; margin: 0; border-top: 1px solid rgba(0,0,0,.06); padding-top: 12px; }
+    .plan-summary-feats li {
+      font-size: 12.5px;
+      color: var(--text-dark);
+      padding: 4px 0 4px 20px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .plan-summary-feats li::before {
       content: '✓';
       position: absolute;
-      top: 10px; right: 12px;
-      font-size: 12px;
-      font-weight: 800;
+      left: 0; top: 4px;
       color: var(--brand);
+      font-weight: 800;
+      font-size: 12px;
     }
-    .plan-icon { font-size: 24px; margin-bottom: 8px; }
-    .plan-name { font-size: 15px; font-weight: 700; color: var(--text-dark); margin-bottom: 3px; }
-    .plan-desc { font-size: 12px; color: var(--text-muted); line-height: 1.4; }
-    .plan-badge {
-      display: inline-block;
-      font-size: 10px; font-weight: 700;
-      background: var(--brand);
-      color: #fff;
-      padding: 2px 7px;
-      border-radius: 100px;
-      margin-top: 6px;
+    .plan-team-note {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 14px;
+      padding: 10px;
+      background: #f8f9fc;
+      border-radius: 10px;
+    }
+    .plan-team-note a { color: var(--brand); font-weight: 700; text-decoration: none; }
+    .plan-team-note a:hover { text-decoration: underline; }
+    @media (max-width: 480px) {
+      .plan-summary-row { flex-wrap: wrap; }
+      .plan-summary-price { text-align: left; width: 100%; padding-left: 58px; }
     }
 
     /* Step dots */
@@ -1281,7 +1301,6 @@
       .modal-overlay { padding: 0; align-items: flex-end; }
       .modal { border-radius: 20px 20px 0 0; max-width: 100%; }
       .field-row { grid-template-columns: 1fr; }
-      .plan-cards { grid-template-columns: 1fr; }
     }
 
     @keyframes shake {
@@ -1604,13 +1623,13 @@
 <!-- ──────────────────────────────────────── NAVBAR ── -->
 <nav class="navbar">
   <div class="nav-inner">
-    <a href="/" class="nav-logo">
+    <a href="index.html" class="nav-logo">
       <img src="bazz-logo-green.svg" alt="Bazz" class="nav-logo-img">
     </a>
     <div class="nav-links">
       <a href="#how-it-works">How It Works</a>
-      <a href="#nfc-cards">NFC Cards</a>
-      <a href="#customers">Customers</a>
+      <a href="shop.html">Shop</a>
+      <a href="corporate.html">For Teams</a>
     </div>
     <div class="nav-ctas">
       <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
@@ -1625,8 +1644,8 @@
 <!-- Mobile nav drawer -->
 <div class="mobile-nav">
   <a href="#how-it-works">How It Works</a>
-  <a href="#nfc-cards">NFC Cards</a>
-  <a href="#customers">Customers</a>
+  <a href="shop.html">Shop</a>
+  <a href="corporate.html">For Businesses</a>
   <div class="mobile-nav-divider"></div>
   <div class="mobile-nav-ctas">
     <a href="https://app.bazzcards.com/" class="btn-ghost-sm">Sign In</a>
@@ -1644,15 +1663,14 @@
     <div class="hero-content">
       <div class="hero-eyebrow">
         <div class="eyebrow-dot"></div>
-        Trusted by 100+ professionals
+        Uganda's leading NFC card platform
       </div>
-      <h1 class="hero-h1">The Smarter Way<br>To <span class="grad">Capture Leads</span></h1>
-      <p class="hero-sub">Stand out and be remembered with smart digital business cards that capture leads automatically and make follow-ups effortless.</p>
+      <h1 class="hero-h1">One Tap. Your Whole<br>Team, <span class="grad">Connected.</span></h1>
+      <p class="hero-sub">Bazzcards gives every employee a smart NFC business card &mdash; fully branded, centrally managed, and impossible to lose or run out of. One tap shares their complete profile to any smartphone. No app needed.</p>
       <div class="hero-btns">
-        <a href="#" class="btn-hp" onclick="openModal();return false">Get Started &rarr;</a>
-        <a href="#nfc-cards" class="btn-hs">🪪 Shop NFC cards</a>
+        <a href="corporate.html" class="btn-hp">Equip Your Team &rarr;</a>
+        <a href="#" class="btn-hs" onclick="openModal();return false">Get a Card for Yourself</a>
       </div>
-      <p style="font-size:13.5px;color:rgba(255,255,255,0.45);font-weight:500;margin-top:-12px;margin-bottom:32px">No credit card required to start.</p>
       <div class="hero-trust">
         <div class="trust-faces">
           <div class="trust-face" style="background:#1A5CFF">MC</div>
@@ -1661,7 +1679,7 @@
           <div class="trust-face" style="background:#DC2626">KK</div>
           <div class="trust-face" style="background:#7C3AED">AI</div>
         </div>
-        <div class="trust-label"><strong>Trusted by 100+</strong> businesses worldwide</div>
+        <div class="trust-label">Used by teams at <strong>Sheraton, Stanbic, Mango Safaris,</strong> and 100+ businesses across East Africa.</div>
       </div>
     </div>
     <!-- Right: Phone -->
@@ -1693,8 +1711,7 @@
   <div class="sec-inner">
     <div class="tc">
       <div class="sec-label">How it works</div>
-      <h2 class="sec-title">How Bazzcards works</h2>
-      <p class="sec-sub">Create a digital business card, share it anywhere, and automatically capture leads &ndash; in four simple steps.</p>
+      <h2 class="sec-title">Simple for employees.<br>Powerful for HR.</h2>
     </div>
     <div class="steps">
 
@@ -1702,8 +1719,8 @@
       <div class="step-row">
         <div>
           <div class="step-num">1</div>
-          <h3 class="step-title">Create your digital business card (and your team&rsquo;s)</h3>
-          <p class="step-desc">Set up a profile for yourself or your team in minutes. Add contact details once and keep everything up to date without reprinting cards.</p>
+          <h3 class="step-title">Your team gets cards, ready from day one.</h3>
+          <p class="step-desc">Each employee receives a personalised NFC card pre-loaded with their name, title, and company profile. No setup required on their end. HR manages everything from a central dashboard.</p>
         </div>
         <img src="images/delloite.webp" alt="Bazzcards digital profile on phone" class="step-img" width="420" height="280" loading="lazy">
       </div>
@@ -1712,8 +1729,8 @@
       <div class="step-row rev">
         <div>
           <div class="step-num">2</div>
-          <h3 class="step-title">Build a profile that helps people take the next step</h3>
-          <p class="step-desc">Include contact information, links, calendars, case studies, social media, and more on one branded page. Make it easy for people to act immediately after meeting you.</p>
+          <h3 class="step-title">One tap shares everything.</h3>
+          <p class="step-desc">Tap the card to any smartphone and the employee's full contact profile opens instantly &mdash; no app, no friction. The recipient saves their details in seconds. Your team looks professional every single time.</p>
         </div>
         <img src="images/buro-happold.webp" alt="Branded Bazzcard digital profile" class="step-img" width="420" height="280" loading="lazy">
       </div>
@@ -1722,8 +1739,8 @@
       <div class="step-row">
         <div>
           <div class="step-num">3</div>
-          <h3 class="step-title">Share anywhere, instantly</h3>
-          <p class="step-desc">Share in person or online using NFC cards, Apple or Google Wallet, QR codes, or links. Every introduction works the same way, no matter where it happens.</p>
+          <h3 class="step-title">You stay in control.</h3>
+          <p class="step-desc">Update contact details remotely. Deactivate a card the moment someone leaves. Track engagement across your whole team. Everything managed from one place, always up to date.</p>
         </div>
         <img src="images/1sharing-pvc-1536x1536.webp" alt="Share your Bazzcard instantly" class="step-img" width="420" height="280" loading="lazy">
       </div>
@@ -1732,8 +1749,8 @@
       <div class="step-row rev">
         <div>
           <div class="step-num">4</div>
-          <h3 class="step-title">Capture leads, follow up and close deals</h3>
-          <p class="step-desc">When someone views your card, they can save your details and share theirs with one tap. You see who engaged and follow up with context &ndash; no missed leads.</p>
+          <h3 class="step-title">Every introduction becomes a lead.</h3>
+          <p class="step-desc">When someone views a card, they can save the contact and share theirs back with one tap. Your team captures leads automatically &mdash; no manual follow-up, no missed connections.</p>
         </div>
         <img src="images/Instant-Lead-Capture-2.webp" alt="Bazzcards lead capture dashboard" class="step-img" width="420" height="420" loading="lazy">
       </div>
@@ -1794,21 +1811,20 @@
 <section class="section tiers-section">
   <div class="sec-inner">
     <div class="tc">
-      <h2 class="sec-title">Built for individuals and<br>growing teams</h2>
-      <p class="sec-sub">Start on your own or roll out to your entire team — up and running in minutes.</p>
+      <h2 class="sec-title">Built for your whole team.<br>Works for you personally too.</h2>
     </div>
     <div class="tiers-grid" style="grid-template-columns:repeat(2,1fr);max-width:760px;margin-left:auto;margin-right:auto;">
       <div class="tier-card">
         <div class="tier-ic tier-ic-b"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
         <div class="tier-name">Personal</div>
-        <p class="tier-desc">Create a digital card that gets saved, shared, and followed up. Perfect for consultants, founders, and anyone who relies on networking.</p>
-        <a href="#" class="tier-cta" onclick="openModal();return false">Get started &rarr;</a>
+        <p class="tier-desc">For consultants, founders, and professionals who network on their own. One card, your full profile, automatic lead capture. Get started in minutes.</p>
+        <a href="#" class="tier-cta" onclick="openModal();return false">Get my card &rarr;</a>
       </div>
       <div class="tier-card feat">
         <div class="tier-ic tier-ic-d"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <div class="tier-name">Teams</div>
-        <p class="tier-desc">Give every employee a consistent digital business card. Track engagement, capture leads, and manage users from one place.</p>
-        <a href="#nfc-cards" class="tier-cta">See pricing &rarr;</a>
+        <p class="tier-desc">For HR and Admin teams equipping 10 or more employees. Central dashboard, company branding on every card, deactivate instantly when staff leave. Priced per card, with a monthly subscription per employee.</p>
+        <a href="corporate.html" class="tier-cta">Get a quote &rarr;</a>
       </div>
     </div>
   </div>
@@ -1925,31 +1941,31 @@
   <div class="sec-inner">
     <div class="tc">
       <div class="sec-label" style="color:#99cc00">Why businesses switch</div>
-      <h2 class="sec-title">Why businesses switch to<br>Bazzcards</h2>
-      <p class="sec-sub">A modern but simple approach to digital business cards for growing teams.</p>
+      <h2 class="sec-title">Replace paper cards with a<br>system that actually works.</h2>
+      <p class="sec-sub">Paper cards run out, go out of date, and disappear. Bazzcards is a managed system &mdash; one card per employee, one dashboard for HR, and zero reprinting. Ever.</p>
     </div>
     <div class="why-grid">
       <div class="why-feat">
-        <div class="why-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
-        <div class="why-title">Generate more leads and sync to your CRM</div>
-        <p class="why-desc">Turn profile views into saved leads. Contacts are stored automatically and can sync to your CRM for easy follow-up.</p>
-        <div class="why-result">✓ No missed contacts and no manual data entry</div>
+        <div class="why-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="why-title">Full control from day one.</div>
+        <p class="why-desc">Add new employees, update details, and deactivate cards immediately when staff leave &mdash; all from a central admin dashboard. Your company data stays protected, always.</p>
+        <div class="why-result">✓ No more chasing outdated contact information</div>
       </div>
       <div class="why-feat">
         <div class="why-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
-        <div class="why-title">Centralize all marketing and sales assets</div>
-        <p class="why-desc">Control how marketing and sales assets are shared across your team. Present links, case studies, files, and content consistently on every profile.</p>
-        <div class="why-result">✓ Every profile stays on brand and up to date</div>
+        <div class="why-title">Your brand on every card.</div>
+        <p class="why-desc">Every employee card carries your logo, colours, and company identity. Consistent, professional, and impossible to get wrong. Whether it's a receptionist or a CEO, the impression is the same.</p>
+        <div class="why-result">✓ One brand voice, across every introduction</div>
       </div>
       <div class="why-feat">
-        <div class="why-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg></div>
-        <div class="why-title">Admin dashboard for simple user management</div>
-        <p class="why-desc">Company admins can manage users, organise groups, review activity, and access analytics all from one place.</p>
-        <div class="why-result">✓ Day-to-day admin stays simple and controlled</div>
+        <div class="why-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+        <div class="why-title">Turn every handshake into a lead.</div>
+        <p class="why-desc">When someone views an employee's card, they can save their details with one tap. Leads are captured automatically and can sync to your CRM &mdash; no manual entry, no missed contacts.</p>
+        <div class="why-result">✓ Every introduction tracked and followed up</div>
       </div>
     </div>
     <div class="why-cta-row">
-      <a href="#" class="btn-lg-p" onclick="openModal();return false">Get started &rarr;</a>
+      <a href="corporate.html" class="btn-lg-p">Get a Quote for Your Team &rarr;</a>
     </div>
   </div>
 </section>
@@ -2056,11 +2072,11 @@
 <!-- ──────────────────────────────────────── FINAL CTA ── -->
 <section class="final-cta">
   <div class="sec-inner" style="max-width:680px">
-    <h2 class="sec-title">Get started free today</h2>
-    <p class="sec-sub">Your next client, partner, or opportunity is one tap away.</p>
+    <h2 class="sec-title">Ready to equip your team?</h2>
+    <p class="sec-sub">Join the businesses across East Africa that have replaced paper cards with a system that works. Get your team set up in days, not weeks.</p>
     <div class="final-btns">
-      <a href="#" class="btn-lg-p" onclick="openModal();return false">Get Started &rarr;</a>
-      <a href="#nfc-cards" class="btn-lg-s">Shop NFC Cards</a>
+      <a href="corporate.html" class="btn-lg-p">Get a Quote for Your Team &rarr;</a>
+      <a href="#" class="btn-lg-s" onclick="openModal();return false">Get a Personal Card</a>
     </div>
   </div>
 </section>
@@ -2071,10 +2087,10 @@
     <div class="footer-top">
 
       <div class="ft-brand">
-        <a href="/" class="ft-logo">
+        <a href="index.html" class="ft-logo">
           <img src="bazz-logo-green.svg" alt="Bazz" class="ft-logo-img">
         </a>
-        <p class="ft-tag">Uganda's leading digital business card platform — built for East Africa.</p>
+        <p class="ft-tag">One Tap. Endless Possibilities.</p>
         <div class="ft-social">
           <a href="https://www.instagram.com/bazzcards" class="soc-link" title="Instagram" target="_blank" rel="noopener">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -2094,16 +2110,18 @@
       <div>
         <div class="ft-col-ttl">Platform</div>
         <ul class="ft-links">
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="corporate.html">For Teams</a></li>
           <li><a href="https://app.bazzcards.com/">Sign In</a></li>
-          <li><a href="/shop.html">Shop NFC Cards</a></li>
         </ul>
       </div>
 
       <div>
-        <div class="ft-col-ttl">Resources</div>
+        <div class="ft-col-ttl">Legal</div>
         <ul class="ft-links">
-          <li><a href="/#customers">Customers</a></li>
-          <li><a href="/#how-it-works">How It Works</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
         </ul>
       </div>
 
@@ -2119,8 +2137,8 @@
     <div class="footer-btm">
       <div class="ft-copy">&copy; 2026 BAZZCARDS. Based in Uganda</div>
       <div class="ft-legal">
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
       </div>
     </div>
   </div>
@@ -2217,24 +2235,31 @@
             </div>
           </div>
 
-          <!-- ── STEP 3: Choose plan ── -->
+          <!-- ── STEP 3: Your card ── -->
           <div class="wizard-step" id="step-2">
-            <div class="modal-title">Choose your plan</div>
-            <p class="modal-subtitle">Start today — upgrade any time as you grow.</p>
-            <div class="plan-cards">
-              <div class="plan-card selected" data-plan="personal" onclick="selectPlan(this)">
-                <div class="plan-icon">👤</div>
-                <div class="plan-name">Personal</div>
-                <p class="plan-desc">Perfect for individuals and freelancers.</p>
-                <div class="plan-badge">Free</div>
+            <div class="modal-title">Your Bazzcards NFC card</div>
+            <p class="modal-subtitle">One card. One-time payment. No subscriptions, ever.</p>
+            <div class="plan-summary">
+              <div class="plan-summary-row">
+                <div class="plan-summary-icon">💳</div>
+                <div class="plan-summary-info">
+                  <div class="plan-summary-name">Bazzcards NFC Card</div>
+                  <div class="plan-summary-desc">Premium NFC card · Custom design · Free Kampala delivery</div>
+                </div>
+                <div class="plan-summary-price">
+                  <div class="plan-summary-amount">UGX 80,000</div>
+                  <div class="plan-summary-unit">one-time</div>
+                </div>
               </div>
-              <div class="plan-card" data-plan="teams" onclick="selectPlan(this)">
-                <div class="plan-icon">👥</div>
-                <div class="plan-name">Teams</div>
-                <p class="plan-desc">For businesses managing multiple cards.</p>
-                <div class="plan-badge">From $9/mo</div>
-              </div>
+              <ul class="plan-summary-feats">
+                <li>NFC + QR on every card — works with any phone</li>
+                <li>Editable digital profile (update anytime, free)</li>
+                <li>No app required for recipients</li>
+                <li>One card, lifetime use — no renewals</li>
+              </ul>
             </div>
+            <p class="plan-team-note">Ordering for a team of 10+? <a href="corporate.html">See our business pricing →</a></p>
+            <input type="hidden" id="planValue" value="individual">
           </div>
 
         </div><!-- /steps-track -->
@@ -2246,7 +2271,7 @@
       <button class="btn-modal-back" id="btnBack" onclick="wizardBack()" style="display:none">Back</button>
       <button class="btn-modal-next" id="btnNext" onclick="wizardNext()">Continue →</button>
     </div>
-    <p style="text-align:center;font-size:11.5px;color:var(--text-muted);padding:0 24px 20px;line-height:1.5">By creating an account you agree to our <a href="https://bazzcards.com/privacy" target="_blank" style="color:var(--brand);font-weight:600">Privacy Policy</a></p>
+    <p style="text-align:center;font-size:11.5px;color:var(--text-muted);padding:0 24px 20px;line-height:1.5">By creating an account you agree to our <a href="privacy.html" target="_blank" style="color:var(--brand);font-weight:600">Privacy Policy</a> &amp; <a href="terms.html" target="_blank" style="color:var(--brand);font-weight:600">Terms</a></p>
 
     <!-- Success screen (replaces everything above) -->
     <div class="modal-success" id="modalSuccess">
@@ -2265,7 +2290,7 @@
   const totalSteps = 3;
   const progressWidths = ['33%', '66%', '100%'];
   const stepLabels = ['Step 1 of 3', 'Step 2 of 3', 'Step 3 of 3'];
-  const nextLabels = ['Continue →', 'Continue →', 'Create my card 🎉'];
+  const nextLabels = ['Continue →', 'Continue →', 'Order my card 🎉'];
 
   function openModal() {
     const overlay = document.getElementById('modalOverlay');
@@ -2301,8 +2326,6 @@
     document.getElementById('stepsTrack').style.transform = 'translateX(0)';
     document.getElementById('stepsTrack').style.transition = 'none';
     document.querySelectorAll('.field.has-error').forEach(f => f.classList.remove('has-error'));
-    document.querySelectorAll('.plan-card').forEach(c => c.classList.remove('selected'));
-    document.querySelector('.plan-card[data-plan="personal"]').classList.add('selected');
     // Clear inputs
     ['firstName','lastName','email','phone','company','jobTitle'].forEach(id => {
       const el = document.getElementById(id);
@@ -2380,7 +2403,7 @@
       btn.disabled = true;
       btn.textContent = 'Sending…';
 
-      const plan = document.querySelector('.plan-card.selected')?.dataset.plan || 'personal';
+      const plan = 'individual — UGX 80,000 one-time';
       const data = {
         access_key: '312996ee-8e8f-44e8-9f4d-b443187c4e8a',
         subject: 'New Bazzcards Inquiry — ' + document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value,
@@ -2414,7 +2437,7 @@
         }
       } catch (err) {
         btn.disabled = false;
-        btn.textContent = 'Create my card 🎉';
+        btn.textContent = 'Order my card 🎉';
         alert('Something went wrong. Please try again or email us at support@bazzcards.com');
       }
     }
@@ -2426,11 +2449,6 @@
       updateStepUI();
       slideToStep(currentStep);
     }
-  }
-
-  function selectPlan(el) {
-    document.querySelectorAll('.plan-card').forEach(c => c.classList.remove('selected'));
-    el.classList.add('selected');
   }
 
   // Wire all "Get Started" buttons
